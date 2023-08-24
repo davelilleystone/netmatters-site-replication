@@ -1,4 +1,27 @@
+// variables
+
+//colors
+$tealish-blue: #323544;
+$ebony-clay: #212330;
+
+$main-footer-background: $tealish-blue;
+$bottom-footer-background: $ebony-clay;
+
+// font weight
+$font-weight-regular: 400;
+$font-weight-semi-bold: 600;
+$font-weight-bold: 700;
+
+// Font import
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,600&display=swap");
+
+// layout
+
+$inner-max-width: 1260px;
+
+// Base styles
+
 :root {
   letter-spacing: 0.4px;
   font-family: "Poppins", "sans-serif";
@@ -13,20 +36,20 @@
 }
 
 .footer-container {
-  background-color: #323544;
+  background-color: $main-footer-background;
 }
 
 .inner-footer-container {
   display: flex;
   flex-direction: column;
-  max-width: 1260px;
+  max-width: $inner-max-width;
   color: white;
   padding: 27px 15px 0;
   font-size: 13px;
 }
 
 .inner-footer-container h4 {
-  font-weight: 400;
+  font-weight: $font-weight-regular;
   text-transform: uppercase;
   line-height: 17.6px;
   margin-bottom: 26px;
@@ -53,13 +76,13 @@
 }
 
 .bottom-footer-container {
-  background-color: #212330;
+  background-color: $bottom-footer-background;
 }
 
 .bottom-footer-content {
   display: flex;
   flex-direction: column;
-  max-width: 1260px;
+  max-width: $inner-max-width;
   color: white;
   font-size: 13px;
   line-height: 22px;
@@ -79,5 +102,3 @@
   font-size: 32px;
   background-color: red;
 }
-
-/*# sourceMappingURL=style.css.map */
