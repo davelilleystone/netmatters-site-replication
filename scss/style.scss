@@ -43,6 +43,10 @@ $inner-max-width: 1260px;
   padding: 0 15px;
 }
 
+.inner-container a:not(.social-links__social-link):hover {
+  text-decoration: underline;
+}
+
 .footer-links {
   margin-bottom: 30px;
 }
@@ -87,10 +91,10 @@ $inner-max-width: 1260px;
   line-height: 22px;
 }
 
-.inner-footer-container a:hover,
-.bottom-footer-content a:hover {
-  text-decoration: underline;
-}
+// .inner-footer-container a:hover,
+// .bottom-footer-content a:hover {
+//   text-decoration: underline;
+// }
 
 .bottom-footer-container {
   background-color: $bottom-footer-background;
@@ -120,6 +124,7 @@ $inner-max-width: 1260px;
   width: 65px;
   height: 65px;
   background-color: $btn-social-bg;
+  text-decoration: none;
 }
 
 .fa-brands {
@@ -145,7 +150,6 @@ $inner-max-width: 1260px;
 
 .social-links__social-link--facebook:hover {
   background-color: $btn-facebook-hover;
-  text-decoration: none;
 }
 
 .social-links__social-link--linked-in:hover {

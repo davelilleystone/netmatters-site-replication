@@ -8,6 +8,10 @@
   padding: 0 15px;
 }
 
+.inner-container a:not(.social-links__social-link):hover {
+  text-decoration: underline;
+}
+
 .footer-links {
   margin-bottom: 30px;
 }
@@ -52,11 +56,6 @@
   line-height: 22px;
 }
 
-.inner-footer-container a:hover,
-.bottom-footer-content a:hover {
-  text-decoration: underline;
-}
-
 .bottom-footer-container {
   background-color: #212330;
 }
@@ -85,6 +84,7 @@
   width: 65px;
   height: 65px;
   background-color: #212330;
+  text-decoration: none;
 }
 
 .fa-brands {
@@ -109,7 +109,6 @@
 
 .social-links__social-link--facebook:hover {
   background-color: #3b5998;
-  text-decoration: none;
 }
 
 .social-links__social-link--linked-in:hover {
