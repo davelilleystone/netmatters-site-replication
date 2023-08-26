@@ -12,10 +12,12 @@ $main-footer-background: $tealish-blue;
 $bottom-footer-background: $ebony-clay;
 
 $btn-bottom-footer: $ebony-clay;
-$btn-bottom-facebook-hover: $denim;
-$btn-bottom-linkedin-hover: $french-blue;
-$btn-bottom-twitter-hover: $cerulean;
-$btn-bottom-insta-hover: $pink-lemonade;
+
+$btn-social-bg: $ebony-clay;
+$btn-facebook-hover: $denim;
+$btn-linkedin-hover: $french-blue;
+$btn-twitter-hover: $cerulean;
+$btn-insta-hover: $pink-lemonade;
 
 // font weight
 $font-weight-regular: 400;
@@ -104,45 +106,60 @@ $inner-max-width: 1260px;
   padding: 10px 15px;
 }
 
-.social-links-container {
+.social-links {
+  display: grid;
+  justify-content: start;
+  gap: 10px;
+  grid-template-areas: "social-links__social-link--facebook social-links__social-link--linked-in social-links__social-link--twitter social-links__social-link--instagram";
+}
+
+.social-links__social-link {
   display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 10px;
-  // max-width: 320px;
+  justify-content: center;
+  align-items: center;
+  width: 65px;
+  height: 65px;
+  background-color: $btn-social-bg;
 }
 
-.social-link a {
-  display: block;
-  margin-right: 10px;
-  padding: 12px 22px 16px;
-  background-color: $ebony-clay;
-  text-align: center;
+.fa-brands {
   font-size: 26px;
-  margin-bottom: 10px;
-  line-height: 26px;
 }
 
-.social-link {
-  flex: 0 20px;
+.social-links__social-link--facebook {
+  grid-area: social-links__social-link--facebook;
+}
+
+.social-links__social-link--linked-in {
+  grid-area: social-links__social-link--linked-in;
+}
+
+.social-links__social-link--twitter {
+  grid-area: social-links__social-link--twitter;
+}
+.social-links__social-link--instagram {
+  grid-area: social-links__social-link--instagram;
 }
 
 // state changes
 
-a:has(i.fa-facebook-f):hover {
-  background-color: $btn-bottom-facebook-hover;
+.social-links__social-link--facebook:hover {
+  background-color: $btn-facebook-hover;
+  text-decoration: none;
 }
 
-a:has(i.fa-linkedin-in):hover {
-  background-color: $btn-bottom-linkedin-hover;
+.social-links__social-link--linked-in:hover {
+  background-color: $btn-linkedin-hover;
 }
 
-a:has(i.fa-twitter):hover {
-  background-color: $btn-bottom-twitter-hover;
+.social-links__social-link--twitter:hover {
+  background-color: $btn-twitter-hover;
+}
+.social-links__social-link--instagram:hover {
+  background-color: $btn-insta-hover;
 }
 
-a:has(i.fa-instagram):hover {
-  background-color: $btn-bottom-insta-hover;
-}
+// media queries
 
 @media screen and (min-width: 480px) {
   .footer-logo {
