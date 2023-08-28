@@ -1,5 +1,8 @@
 @import "partials/variables";
+@import "mixins/mixins.scss";
+@import "extends/extends.scss";
 @import "partials/base";
+@import "partials/newsletter";
 @import "partials/footer";
 @import "partials/layout-mq";
 
@@ -10,15 +13,16 @@
 
 // media queries
 
-@media screen and (min-width: 480px) {
-  .footer-logo {
-    width: 320px;
-  }
+// @media screen and (min-width: 480px) {
+//   .footer-logo {
+//     width: 320px;
+//   }
 
-  .social-links {
-    grid-template-areas: "social-links__social-link--facebook social-links__social-link--linked-in social-links__social-link--twitter social-links__social-link--instagram";
-  }
-}
+//   .social-links {
+//     grid-template-areas: "social-links__social-link--facebook social-links__social-link--linked-in social-links__social-link--twitter social-links__social-link--instagram";
+//   }
+// }
+
 @media screen and (min-width: 768px) {
   .inner-container,
   .bottom-footer-content {

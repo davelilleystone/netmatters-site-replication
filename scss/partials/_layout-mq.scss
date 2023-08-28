@@ -1,20 +1,39 @@
-// contaienr media queries
+// container media queries
 
-@media screen and (min-width: 768px) {
+// @media screen and (min-width: 768px) {
+//   .inner-container {
+//     max-width: 720px;
+//     margin: 0 auto;
+//   }
+// }
+
+// @media screen and (min-width: 992px) {
+//   .inner-container {
+//     max-width: 970px;
+//   }
+// }
+
+// @media screen and (min-width: 1260px) {
+//   .inner-container {
+//     max-width: 1170px;
+//   }
+// }
+
+@include mq($mq-s) {
   .inner-container {
     max-width: 720px;
     margin: 0 auto;
   }
 }
 
-@media screen and (min-width: 992px) {
+@include mq($mq-m) {
   .inner-container {
     max-width: 970px;
   }
 }
 
-@media screen and (min-width: 1260px) {
+@include mq($mq-l) {
   .inner-container {
-    max-width: 1170px;
+    max-width: 1260px;
   }
 }

@@ -1,18 +1,7 @@
-.inner-footer-container a:not(.social-links__social-link):hover,
-.bottom-footer-container a:hover {
+/* footer styles*/
+
+.inner-footer-container a:not(.social-links__social-link):hover {
   text-decoration: underline;
-}
-
-.footer-links {
-  margin-bottom: 30px;
-}
-
-.footer-logo {
-  width: 250px;
-}
-
-.footer-container {
-  background-color: $main-footer-background;
 }
 
 .inner-footer-container {
@@ -22,46 +11,66 @@
   color: white;
   padding-top: 27px;
   font-size: 13px;
+  @extend %footer-anchor;
+
+  h4 {
+    font-weight: $font-weight-regular;
+    font-size: 16px;
+    text-transform: uppercase;
+    line-height: 17.6px;
+    margin: 24px 0 26px;
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
 }
 
-.inner-footer-container h4 {
-  font-weight: $font-weight-regular;
-  font-size: 16px;
-  text-transform: uppercase;
-  line-height: 17.6px;
-  margin: 24px 0 26px;
+.fa-brands {
+  font-size: 26px;
 }
 
-.footer-link-container h4 {
-  margin-top: 0;
+.footer {
+  &-links {
+    margin-bottom: 30px;
+  }
+
+  &-logo {
+    width: 250px;
+    @include mq($mq-xs) {
+      width: 320px;
+    }
+  }
+
+  &-container {
+    background-color: $main-footer-background;
+  }
+
+  &-link-container h4 {
+    margin-top: 0;
+  }
 }
 
-.inner-footer-container ul {
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-}
+.bottom-footer {
+  &-container {
+    background-color: $bottom-footer-background;
+    & a:hover {
+      text-decoration: underline;
+    }
+  }
 
-.inner-footer-container a,
-.bottom-footer-content a {
-  text-decoration: none;
-  color: white;
-  font-size: 13px;
-  line-height: 22px;
-}
-
-.bottom-footer-container {
-  background-color: $bottom-footer-background;
-}
-
-.bottom-footer-content {
-  display: flex;
-  flex-direction: column;
-  max-width: $inner-max-width;
-  color: white;
-  font-size: 13px;
-  line-height: 22px;
-  padding: 10px 15px;
+  &-content {
+    display: flex;
+    flex-direction: column;
+    max-width: $inner-max-width;
+    color: white;
+    font-size: 13px;
+    line-height: 22px;
+    padding: 10px 15px;
+    @extend %footer-anchor;
+  }
 }
 
 .social-links {
@@ -72,50 +81,48 @@
   grid-template-areas:
     "social-links__social-link--facebook social-links__social-link--linked-in"
     "social-links__social-link--twitter social-links__social-link--instagram";
-}
+  @include mq($mq-xs) {
+    grid-template-areas: "social-links__social-link--facebook social-links__social-link--linked-in social-links__social-link--twitter social-links__social-link--instagram";
+  }
+  &__social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background-color: $btn-social-bg;
+    text-decoration: none;
 
-.social-links__social-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 60px;
-  height: 60px;
-  background-color: $btn-social-bg;
-  text-decoration: none;
-}
+    &--facebook {
+      grid-area: social-links__social-link--facebook;
 
-.fa-brands {
-  font-size: 26px;
-}
+      &:hover {
+        background-color: $btn-facebook-hover;
+      }
+    }
 
-.social-links__social-link--facebook {
-  grid-area: social-links__social-link--facebook;
-}
+    &--linked-in {
+      grid-area: social-links__social-link--linked-in;
 
-.social-links__social-link--linked-in {
-  grid-area: social-links__social-link--linked-in;
-}
+      &:hover {
+        background-color: $btn-linkedin-hover;
+      }
+    }
 
-.social-links__social-link--twitter {
-  grid-area: social-links__social-link--twitter;
-}
-.social-links__social-link--instagram {
-  grid-area: social-links__social-link--instagram;
-}
+    &--twitter {
+      grid-area: social-links__social-link--twitter;
 
-// state changes
+      &:hover {
+        background-color: $btn-twitter-hover;
+      }
+    }
 
-.social-links__social-link--facebook:hover {
-  background-color: $btn-facebook-hover;
-}
+    &--instagram {
+      grid-area: social-links__social-link--instagram;
 
-.social-links__social-link--linked-in:hover {
-  background-color: $btn-linkedin-hover;
-}
-
-.social-links__social-link--twitter:hover {
-  background-color: $btn-twitter-hover;
-}
-.social-links__social-link--instagram:hover {
-  background-color: $btn-insta-hover;
+      &:hover {
+        background-color: $btn-insta-hover;
+      }
+    }
+  }
 }

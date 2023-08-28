@@ -1,0 +1,23 @@
+// media query mixin
+
+@mixin mq($breakpoint) {
+  @if ($breakpoint == $mq-xs) {
+    @media screen and (min-width: $mq-xs) {
+      @content;
+    }
+  } @else if($breakpoint == $mq-s) {
+    @media screen and (min-width: $mq-s) {
+      @content;
+    }
+  } @else if($breakpoint == $mq-m) {
+    @media screen and (min-width: $mq-m) {
+      @content;
+    }
+  } @else if($breakpoint == $mq-l) {
+    @media screen and (min-width: $mq-l) {
+      @content;
+    }
+  } @else {
+    @error ('Unknown breakpoint supplied');
+  }
+}
