@@ -1,4 +1,4 @@
-/* footer styles*/
+/* footer s*/
 
 .inner-footer-container a:not(.social-links__social-link):hover {
   text-decoration: underline;
@@ -11,6 +11,12 @@
   color: white;
   padding-top: 27px;
   font-size: 13px;
+
+  @include mq($mq-l) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
   @extend %footer-anchor;
 
   h4 {
@@ -35,10 +41,25 @@
 .footer {
   &-links {
     margin-bottom: 30px;
+
+    @include mq($mq-s) {
+      width: 50%;
+    }
+
+    @include mq($mq-m) {
+      width: 25%;
+    }
+
+    @include mq($mq-l) {
+      flex: 1;
+      padding: 0px 15px;
+      margin-bottom: 40px;
+    }
   }
 
   &-logo {
     width: 250px;
+
     @include mq($mq-xs) {
       width: 320px;
     }
@@ -48,14 +69,22 @@
     background-color: $main-footer-background;
   }
 
-  &-link-container h4 {
-    margin-top: 0;
+  &-link-container {
+    @include mq($mq-s) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    & h4 {
+      margin-top: 0;
+    }
   }
 }
 
 .bottom-footer {
   &-container {
     background-color: $bottom-footer-background;
+
     & a:hover {
       text-decoration: underline;
     }
@@ -69,7 +98,30 @@
     font-size: 13px;
     line-height: 22px;
     padding: 10px 15px;
+
     @extend %footer-anchor;
+
+    @include mq($mq-s) {
+      max-width: 720px;
+      margin: 0 auto;
+      padding-left: 15px;
+      flex-direction: row;
+      gap: 10px;
+    }
+
+    @include mq($mq-m) {
+      max-width: 970px;
+    }
+
+    @include mq($mq-l) {
+      max-width: 1170px;
+    }
+
+    & a::before {
+      @include mq($mq-s) {
+        content: " - ";
+      }
+    }
   }
 }
 
@@ -81,9 +133,11 @@
   grid-template-areas:
     "social-links__social-link--facebook social-links__social-link--linked-in"
     "social-links__social-link--twitter social-links__social-link--instagram";
+
   @include mq($mq-xs) {
     grid-template-areas: "social-links__social-link--facebook social-links__social-link--linked-in social-links__social-link--twitter social-links__social-link--instagram";
   }
+
   &__social-link {
     display: flex;
     justify-content: center;
