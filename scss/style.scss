@@ -1,4 +1,5 @@
 @import "partials/variables";
+@import "partials/base";
 @import "partials/footer";
 @import "partials/layout-mq";
 
@@ -6,20 +7,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,600&display=swap");
 
 // Base styles
-
-:root {
-  letter-spacing: 0.4px;
-  font-family: "Poppins", "sans-serif";
-}
-
-.full-width-container {
-  width: 100%;
-}
-
-.inner-container {
-  padding: 0 15px;
-  max-width: $inner-max-width;
-}
 
 // media queries
 
