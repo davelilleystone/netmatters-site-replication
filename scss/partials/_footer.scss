@@ -1,0 +1,121 @@
+.inner-footer-container a:not(.social-links__social-link):hover,
+.bottom-footer-container a:hover {
+  text-decoration: underline;
+}
+
+.footer-links {
+  margin-bottom: 30px;
+}
+
+.footer-logo {
+  width: 250px;
+}
+
+.footer-container {
+  background-color: $main-footer-background;
+}
+
+.inner-footer-container {
+  display: flex;
+  flex-direction: column;
+  max-width: $inner-max-width;
+  color: white;
+  padding-top: 27px;
+  font-size: 13px;
+}
+
+.inner-footer-container h4 {
+  font-weight: $font-weight-regular;
+  font-size: 16px;
+  text-transform: uppercase;
+  line-height: 17.6px;
+  margin: 24px 0 26px;
+}
+
+.footer-link-container h4 {
+  margin-top: 0;
+}
+
+.inner-footer-container ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.inner-footer-container a,
+.bottom-footer-content a {
+  text-decoration: none;
+  color: white;
+  font-size: 13px;
+  line-height: 22px;
+}
+
+.bottom-footer-container {
+  background-color: $bottom-footer-background;
+}
+
+.bottom-footer-content {
+  display: flex;
+  flex-direction: column;
+  max-width: $inner-max-width;
+  color: white;
+  font-size: 13px;
+  line-height: 22px;
+  padding: 10px 15px;
+}
+
+.social-links {
+  margin-bottom: 30px;
+  display: grid;
+  justify-content: start;
+  gap: 10px;
+  grid-template-areas:
+    "social-links__social-link--facebook social-links__social-link--linked-in"
+    "social-links__social-link--twitter social-links__social-link--instagram";
+}
+
+.social-links__social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  background-color: $btn-social-bg;
+  text-decoration: none;
+}
+
+.fa-brands {
+  font-size: 26px;
+}
+
+.social-links__social-link--facebook {
+  grid-area: social-links__social-link--facebook;
+}
+
+.social-links__social-link--linked-in {
+  grid-area: social-links__social-link--linked-in;
+}
+
+.social-links__social-link--twitter {
+  grid-area: social-links__social-link--twitter;
+}
+.social-links__social-link--instagram {
+  grid-area: social-links__social-link--instagram;
+}
+
+// state changes
+
+.social-links__social-link--facebook:hover {
+  background-color: $btn-facebook-hover;
+}
+
+.social-links__social-link--linked-in:hover {
+  background-color: $btn-linkedin-hover;
+}
+
+.social-links__social-link--twitter:hover {
+  background-color: $btn-twitter-hover;
+}
+.social-links__social-link--instagram:hover {
+  background-color: $btn-insta-hover;
+}

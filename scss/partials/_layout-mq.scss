@@ -1,0 +1,20 @@
+// contaienr media queries
+
+@media screen and (min-width: 768px) {
+  .inner-container {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .inner-container {
+    max-width: 970px;
+  }
+}
+
+@media screen and (min-width: 1260px) {
+  .inner-container {
+    max-width: 1170px;
+  }
+}

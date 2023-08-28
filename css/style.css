@@ -1,14 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,600&display=swap");
-:root {
-  letter-spacing: 0.4px;
-  font-family: "Poppins", "sans-serif";
-}
-
-.inner-container {
-  padding: 0 15px;
-}
-
-.inner-container a:not(.social-links__social-link):hover {
+.inner-footer-container a:not(.social-links__social-link):hover,
+.bottom-footer-container a:hover {
   text-decoration: underline;
 }
 
@@ -125,6 +117,36 @@
 
 .social-links__social-link--instagram:hover {
   background-color: #d93175;
+}
+
+@media screen and (min-width: 768px) {
+  .inner-container {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 992px) {
+  .inner-container {
+    max-width: 970px;
+  }
+}
+@media screen and (min-width: 1260px) {
+  .inner-container {
+    max-width: 1170px;
+  }
+}
+:root {
+  letter-spacing: 0.4px;
+  font-family: "Poppins", "sans-serif";
+}
+
+.full-width-container {
+  width: 100%;
+}
+
+.inner-container {
+  padding: 0 15px;
+  max-width: 1260px;
 }
 
 @media screen and (min-width: 480px) {

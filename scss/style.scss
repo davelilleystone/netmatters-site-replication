@@ -1,36 +1,9 @@
-// variables
-
-//colors
-$tealish-blue: #323544;
-$ebony-clay: #212330;
-$denim: #3b5998;
-$french-blue: #0077b5;
-$cerulean: #00aced;
-$pink-lemonade: #d93175;
-
-$main-footer-background: $tealish-blue;
-$bottom-footer-background: $ebony-clay;
-
-$btn-bottom-footer: $ebony-clay;
-
-$btn-social-bg: $ebony-clay;
-$btn-facebook-hover: $denim;
-$btn-linkedin-hover: $french-blue;
-$btn-twitter-hover: $cerulean;
-$btn-insta-hover: $pink-lemonade;
-
-// font weight
-$font-weight-regular: 400;
-$font-weight-semi-bold: 600;
-$font-weight-bold: 700;
+@import "partials/variables";
+@import "partials/footer";
+@import "partials/layout-mq";
 
 // Font import
-
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,600&display=swap");
-
-// layout
-
-$inner-max-width: 1260px;
 
 // Base styles
 
@@ -39,129 +12,13 @@ $inner-max-width: 1260px;
   font-family: "Poppins", "sans-serif";
 }
 
+.full-width-container {
+  width: 100%;
+}
+
 .inner-container {
   padding: 0 15px;
-}
-
-.inner-container a:not(.social-links__social-link):hover {
-  text-decoration: underline;
-}
-
-.footer-links {
-  margin-bottom: 30px;
-}
-
-.footer-logo {
-  width: 250px;
-}
-
-.footer-container {
-  background-color: $main-footer-background;
-}
-
-.inner-footer-container {
-  display: flex;
-  flex-direction: column;
   max-width: $inner-max-width;
-  color: white;
-  padding-top: 27px;
-  font-size: 13px;
-}
-
-.inner-footer-container h4 {
-  font-weight: $font-weight-regular;
-  font-size: 16px;
-  text-transform: uppercase;
-  line-height: 17.6px;
-  margin: 24px 0 26px;
-}
-
-.footer-link-container h4 {
-  margin-top: 0;
-}
-
-.inner-footer-container ul {
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-}
-
-.inner-footer-container a,
-.bottom-footer-content a {
-  text-decoration: none;
-  color: white;
-  font-size: 13px;
-  line-height: 22px;
-}
-
-.bottom-footer-container {
-  background-color: $bottom-footer-background;
-}
-
-.bottom-footer-content {
-  display: flex;
-  flex-direction: column;
-  max-width: $inner-max-width;
-  color: white;
-  font-size: 13px;
-  line-height: 22px;
-  padding: 10px 15px;
-}
-
-.social-links {
-  margin-bottom: 30px;
-  display: grid;
-  justify-content: start;
-  gap: 10px;
-  grid-template-areas:
-    "social-links__social-link--facebook social-links__social-link--linked-in"
-    "social-links__social-link--twitter social-links__social-link--instagram";
-}
-
-.social-links__social-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 60px;
-  height: 60px;
-  background-color: $btn-social-bg;
-  text-decoration: none;
-}
-
-.fa-brands {
-  font-size: 26px;
-}
-
-.social-links__social-link--facebook {
-  grid-area: social-links__social-link--facebook;
-}
-
-.social-links__social-link--linked-in {
-  grid-area: social-links__social-link--linked-in;
-}
-
-.social-links__social-link--twitter {
-  grid-area: social-links__social-link--twitter;
-}
-.social-links__social-link--instagram {
-  grid-area: social-links__social-link--instagram;
-}
-
-// state changes
-
-.social-links__social-link--facebook:hover {
-  background-color: $btn-facebook-hover;
-}
-
-.social-links__social-link--linked-in:hover {
-  background-color: $btn-linkedin-hover;
-}
-
-.social-links__social-link--twitter:hover {
-  background-color: $btn-twitter-hover;
-}
-.social-links__social-link--instagram:hover {
-  background-color: $btn-insta-hover;
 }
 
 // media queries
