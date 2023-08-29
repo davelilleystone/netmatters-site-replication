@@ -1,3 +1,116 @@
+.newsletter-form {
+  color: $ship-grey;
+  margin: px-to-rem(50px) 0;
+  font-weight: $font-weight-semi-bold;
+  &__heading {
+    font-size: 2rem;
+    font-weight: $font-weight-regular;
+    margin-bottom: px-to-rem(15px);
+  }
+
+  &__inputs {
+    display: flex;
+    flex-direction: column;
+    @include mq($mq-m) {
+      flex-direction: row;
+    }
+  }
+
+  &__input {
+    margin-bottom: 15px;
+    padding: 5px 15px;
+    border: 1px solid #eee;
+    border-radius: 2px;
+    height: 2rem;
+    &:focus {
+      @extend %input-focus;
+    }
+  }
+
+  &__inputs-container {
+    display: flex;
+    flex-direction: column;
+    @include mq($mq-m) {
+      flex: 1;
+    }
+    @include mq($mq-m) {
+      &:first-of-type {
+        margin-right: 20px;
+      }
+    }
+  }
+
+  &__inputs {
+    margin-bottom: 15px;
+  }
+
+  &__label {
+    margin-bottom: 5px;
+    &::after {
+      content: " *";
+      color: red;
+    }
+  }
+
+  &__marketing-container {
+    display: flex;
+    margin-bottom: px-to-rem(20px);
+  }
+
+  &__checkbox-container {
+    margin-right: 1rem;
+  }
+
+  // hide the checkbox input
+  &__checkbox--hidden {
+    display: none;
+    &:checked + .newsletter-form__checkbox {
+      background-color: $newsletter-checkbox-bg;
+    }
+    &:checked + .newsletter-form__checkbox::after {
+      content: "\2714";
+      color: white;
+      background-color: $newsletter-checkbox-bg;
+      font-size: 20px;
+      text-align: center;
+      position: absolute;
+      left: 5px;
+      top: 2px;
+    }
+  }
+
+  // checkbox 'element' is actually a label
+
+  &__checkbox {
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    border: 3px solid $newsletter-checkbox-border;
+    border-radius: 3px;
+    position: relative;
+  }
+
+  &__marketing-text {
+    line-height: 2rem;
+  }
+
+  &__privacy-link {
+    color: inherit;
+  }
+
+  &__btn {
+    @extend %std-button;
+    border-color: $newsletter-btn-primary;
+    background-color: $newsletter-btn-primary;
+    outline: none;
+    &:hover {
+      background-color: $newsletter-btn-hover;
+      border-color: $newsletter-btn-hover-border;
+    }
+  }
+}
+
 .full-width-container--bg-newsletter {
   background-color: $newsletter-background;
+  display: flex;
 }

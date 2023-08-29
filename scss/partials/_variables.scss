@@ -8,11 +8,13 @@ $french-blue: #0077b5;
 $cerulean: #00aced;
 $pink-lemonade: #d93175;
 $light-grey: #ddd;
+$ship-grey: #333645;
+$baltic-sea: #22242e;
+$cinder: #191a22;
 
+// footer
 $main-footer-background: $tealish-blue;
 $bottom-footer-background: $ebony-clay;
-$newsletter-background: $light-grey;
-
 $btn-bottom-footer: $ebony-clay;
 $btn-social-bg: $ebony-clay;
 $btn-facebook-hover: $denim;
@@ -20,11 +22,23 @@ $btn-linkedin-hover: $french-blue;
 $btn-twitter-hover: $cerulean;
 $btn-insta-hover: $pink-lemonade;
 
+// newsletter
+
+$newsletter-background: $light-grey;
+$newsletter-btn-primary: $ship-grey;
+$newsletter-btn-hover: $baltic-sea;
+$newsletter-btn-hover-border: $cinder;
+$newsletter-checkbox-border: $ship-grey;
+$newsletter-checkbox-bg: $ship-grey;
+$newsletter-font-color: $ship-grey;
+
 // font
 $font-weight-regular: 400;
 $font-weight-semi-bold: 600;
 $font-weight-bold: 700;
 $base-font-size: 16px;
+$base-font-color: #333645;
+
 // layout
 $inner-max-width: 1260px;
 
