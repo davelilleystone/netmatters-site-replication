@@ -135,6 +135,7 @@
 .newsletter-form__btn:hover {
   background-color: #22242e;
   border-color: #191a22;
+  cursor: pointer;
 }
 
 .full-width-container--bg-newsletter {

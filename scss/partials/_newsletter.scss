@@ -106,6 +106,7 @@
     &:hover {
       background-color: $newsletter-btn-hover;
       border-color: $newsletter-btn-hover-border;
+      cursor: pointer;
     }
   }
 }
