@@ -11,6 +11,9 @@ $light-grey: #ddd;
 $ship-grey: #333645;
 $baltic-sea: #22242e;
 $cinder: #191a22;
+$windows-blue: #4183d7;
+$greyesh-blue: #67809f;
+$ironside-grey: #666666;
 
 // footer
 $main-footer-background: $tealish-blue;
@@ -31,6 +34,14 @@ $newsletter-btn-hover-border: $cinder;
 $newsletter-checkbox-border: $ship-grey;
 $newsletter-checkbox-bg: $ship-grey;
 $newsletter-font-color: $ship-grey;
+
+// latest-news
+
+$latest-news-card-blue-theme: $windows-blue;
+$latest-news-card-grey-theme: $greyesh-blue;
+$latest-news-card-card-z-index: 5;
+$latest-news-card-text: $ironside-grey;
+$latest-news-card-span: $ship-grey;
 
 // font
 $font-weight-regular: 400;
