@@ -11,17 +11,17 @@
 
     &:hover {
       transform: translateY(-10px);
-      color: $services-card-white;
+      color: $services-white;
       .services {
         &__card {
           &-inner {
             &-heading {
               &-container {
-                background-color: $services-card-white;
+                background-color: $services-white;
               }
             }
             &-btn {
-              background-color: $services-card-white;
+              background-color: $services-white;
             }
           }
         }
@@ -29,7 +29,7 @@
     }
 
     &-icon {
-      color: $services-card-white;
+      color: $services-white;
     }
 
     &-inner {
@@ -64,31 +64,31 @@
           &-inner {
             &-heading {
               &-container {
-                background-color: $services-card-bs;
+                background-color: $services-bs;
               }
             }
             &-btn {
-              background-color: $services-card-bs;
+              background-color: $services-bs;
             }
           }
         }
       }
       &:hover {
-        background-color: $services-card-bs;
+        background-color: $services-bs;
 
         .services {
           &__card {
             &-icon {
-              color: $services-card-bs;
+              color: $services-bs;
             }
             &-inner {
               &-heading {
                 &-container {
-                  background-color: $services-card-white;
+                  background-color: $services-white;
                 }
               }
               &-btn {
-                color: $services-card-bs;
+                color: $services-bs;
               }
             }
           }
@@ -102,31 +102,31 @@
           &-inner {
             &-heading {
               &-container {
-                background-color: $services-card-is;
+                background-color: $services-is;
               }
             }
             &-btn {
-              background-color: $services-card-is;
+              background-color: $services-is;
             }
           }
         }
       }
       &:hover {
-        background-color: $services-card-is;
+        background-color: $services-is;
 
         .services {
           &__card {
             &-icon {
-              color: $services-card-is;
+              color: $services-is;
             }
             &-inner {
               &-heading {
                 &-container {
-                  background-color: $services-card-white;
+                  background-color: $services-white;
                 }
               }
               &-btn {
-                color: $services-card-is;
+                color: $services-is;
               }
             }
           }
@@ -140,31 +140,31 @@
           &-inner {
             &-heading {
               &-container {
-                background-color: $services-card-dm;
+                background-color: $services-dm;
               }
             }
             &-btn {
-              background-color: $services-card-dm;
+              background-color: $services-dm;
             }
           }
         }
       }
       &:hover {
-        background-color: $services-card-dm;
+        background-color: $services-dm;
 
         .services {
           &__card {
             &-icon {
-              color: $services-card-dm;
+              color: $services-dm;
             }
             &-inner {
               &-heading {
                 &-container {
-                  background-color: $services-card-white;
+                  background-color: $services-white;
                 }
               }
               &-btn {
-                color: $services-card-dm;
+                color: $services-dm;
               }
             }
           }
@@ -178,31 +178,31 @@
           &-inner {
             &-heading {
               &-container {
-                background-color: $services-card-ts;
+                background-color: $services-ts;
               }
             }
             &-btn {
-              background-color: $services-card-ts;
+              background-color: $services-ts;
             }
           }
         }
       }
       &:hover {
-        background-color: $services-card-ts;
+        background-color: $services-ts;
 
         .services {
           &__card {
             &-icon {
-              color: $services-card-ts;
+              color: $services-ts;
             }
             &-inner {
               &-heading {
                 &-container {
-                  background-color: $services-card-white;
+                  background-color: $services-white;
                 }
               }
               &-btn {
-                color: $services-card-ts;
+                color: $services-ts;
               }
             }
           }
@@ -216,31 +216,31 @@
           &-inner {
             &-heading {
               &-container {
-                background-color: $services-card-wd;
+                background-color: $services-wd;
               }
             }
             &-btn {
-              background-color: $services-card-wd;
+              background-color: $services-wd;
             }
           }
         }
       }
       &:hover {
-        background-color: $services-card-wd;
+        background-color: $services-wd;
 
         .services {
           &__card {
             &-icon {
-              color: $services-card-wd;
+              color: $services-wd;
             }
             &-inner {
               &-heading {
                 &-container {
-                  background-color: $services-card-white;
+                  background-color: $services-white;
                 }
               }
               &-btn {
-                color: $services-card-wd;
+                color: $services-wd;
               }
             }
           }
@@ -254,31 +254,31 @@
           &-inner {
             &-heading {
               &-container {
-                background-color: $services-card-cs;
+                background-color: $services-cs;
               }
             }
             &-btn {
-              background-color: $services-card-cs;
+              background-color: $services-cs;
             }
           }
         }
       }
       &:hover {
-        background-color: $services-card-cs;
+        background-color: $services-cs;
 
         .services {
           &__card {
             &-icon {
-              color: $services-card-cs;
+              color: $services-cs;
             }
             &-inner {
               &-heading {
                 &-container {
-                  background-color: $services-card-white;
+                  background-color: $services-white;
                 }
               }
               &-btn {
-                color: $services-card-cs;
+                color: $services-cs;
               }
             }
           }
@@ -292,31 +292,31 @@
           &-inner {
             &-heading {
               &-container {
-                background-color: $services-card-dt;
+                background-color: $services-dt;
               }
             }
             &-btn {
-              background-color: $services-card-dt;
+              background-color: $services-dt;
             }
           }
         }
       }
       &:hover {
-        background-color: $services-card-dt;
+        background-color: $services-dt;
 
         .services {
           &__card {
             &-icon {
-              color: $services-card-dt;
+              color: $services-dt;
             }
             &-inner {
               &-heading {
                 &-container {
-                  background-color: $services-card-white;
+                  background-color: $services-white;
                 }
               }
               &-btn {
-                color: $services-card-dt;
+                color: $services-dt;
               }
             }
           }

@@ -20,6 +20,7 @@ $dark-coral: #d64541;
 $dark-lilac: #926fb1;
 $red-pink: #f62459;
 $chestnut-red: #ce4125;
+$jet-grey: #526781;
 
 // footer
 $main-footer-background: $tealish-blue;
@@ -50,14 +51,18 @@ $latest-news-card-text: $ironside-grey;
 $latest-news-card-span: $ship-grey;
 
 //
-$services-card-white: $white;
-$services-card-bs: $greyesh-blue;
-$services-card-is: $windows-blue;
-$services-card-dm: $dark-mint;
-$services-card-ts: $dark-coral;
-$services-card-wd: $dark-lilac;
-$services-card-cs: $red-pink;
-$services-card-dt: $chestnut-red;
+$services-white: $white;
+$services-bs: $greyesh-blue;
+$services-bs-sub-menu: $jet-grey;
+$services-is: $windows-blue;
+$services-dm: $dark-mint;
+$services-ts: $dark-coral;
+$services-wd: $dark-lilac;
+$services-cs: $red-pink;
+$services-dt: $chestnut-red;
+
+// main-nav
+$main-nav-bg: $ship-grey;
 
 // font
 $font-weight-regular: 400;

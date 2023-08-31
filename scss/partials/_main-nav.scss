@@ -1,0 +1,82 @@
+.main-nav {
+  &__item {
+    flex: 1;
+
+    &:hover &-sub-menu {
+      display: block;
+    }
+
+    &-container {
+      @extend %flex-h-v-center-col;
+      color: white;
+      text-decoration: none;
+      text-transform: uppercase;
+      padding: 20px 0;
+      position: relative;
+      &-small-text {
+        font-size: 0.8rem;
+      }
+      &-large-text {
+        font-size: 1.1rem;
+      }
+
+      &-icon {
+        margin-bottom: 10px;
+      }
+    }
+
+    &-sub-menu {
+      display: none;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 100%;
+      color: white;
+    }
+
+    &--bespoke-software {
+      .main-nav {
+        &__item {
+          &-container {
+            &-icon {
+              color: $services-bs;
+            }
+          }
+        }
+      }
+      &:hover {
+        background-color: $services-bs;
+        .main-nav {
+          &__item {
+            &-sub-menu {
+              background-color: $services-bs-sub-menu;
+            }
+            &-container {
+              &::after {
+              }
+
+              &-icon {
+                color: $white;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+// menu item colors and hovers
+
+.full-width-container--main-nav {
+  background-color: $main-nav-bg;
+  position: relative;
+}

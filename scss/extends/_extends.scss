@@ -33,10 +33,19 @@
   box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
 }
 
-// flex horizontal / vertical center
+// flex horizontal / vertical center - row
 
 %flex-h-v-center {
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// flex horizontal / vertical center - column
+
+%flex-h-v-center-col {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
