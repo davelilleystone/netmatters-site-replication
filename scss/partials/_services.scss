@@ -34,6 +34,7 @@
 
     &-inner {
       &-heading {
+        margin: 0 0 20px;
         @extend %flex-h-v-center;
         padding: 5px;
         &-container {
@@ -96,21 +97,231 @@
     }
 
     &--it-support {
+      .services {
+        &__card {
+          &-inner {
+            &-heading {
+              &-container {
+                background-color: $services-card-is;
+              }
+            }
+            &-btn {
+              background-color: $services-card-is;
+            }
+          }
+        }
+      }
+      &:hover {
+        background-color: $services-card-is;
+
+        .services {
+          &__card {
+            &-icon {
+              color: $services-card-is;
+            }
+            &-inner {
+              &-heading {
+                &-container {
+                  background-color: $services-card-white;
+                }
+              }
+              &-btn {
+                color: $services-card-is;
+              }
+            }
+          }
+        }
+      }
     }
 
     &--digital-marketing {
+      .services {
+        &__card {
+          &-inner {
+            &-heading {
+              &-container {
+                background-color: $services-card-dm;
+              }
+            }
+            &-btn {
+              background-color: $services-card-dm;
+            }
+          }
+        }
+      }
+      &:hover {
+        background-color: $services-card-dm;
+
+        .services {
+          &__card {
+            &-icon {
+              color: $services-card-dm;
+            }
+            &-inner {
+              &-heading {
+                &-container {
+                  background-color: $services-card-white;
+                }
+              }
+              &-btn {
+                color: $services-card-dm;
+              }
+            }
+          }
+        }
+      }
     }
 
     &--telecoms-services {
+      .services {
+        &__card {
+          &-inner {
+            &-heading {
+              &-container {
+                background-color: $services-card-ts;
+              }
+            }
+            &-btn {
+              background-color: $services-card-ts;
+            }
+          }
+        }
+      }
+      &:hover {
+        background-color: $services-card-ts;
+
+        .services {
+          &__card {
+            &-icon {
+              color: $services-card-ts;
+            }
+            &-inner {
+              &-heading {
+                &-container {
+                  background-color: $services-card-white;
+                }
+              }
+              &-btn {
+                color: $services-card-ts;
+              }
+            }
+          }
+        }
+      }
     }
 
     &--web-design {
+      .services {
+        &__card {
+          &-inner {
+            &-heading {
+              &-container {
+                background-color: $services-card-wd;
+              }
+            }
+            &-btn {
+              background-color: $services-card-wd;
+            }
+          }
+        }
+      }
+      &:hover {
+        background-color: $services-card-wd;
+
+        .services {
+          &__card {
+            &-icon {
+              color: $services-card-wd;
+            }
+            &-inner {
+              &-heading {
+                &-container {
+                  background-color: $services-card-white;
+                }
+              }
+              &-btn {
+                color: $services-card-wd;
+              }
+            }
+          }
+        }
+      }
     }
 
     &--cyber-security {
+      .services {
+        &__card {
+          &-inner {
+            &-heading {
+              &-container {
+                background-color: $services-card-cs;
+              }
+            }
+            &-btn {
+              background-color: $services-card-cs;
+            }
+          }
+        }
+      }
+      &:hover {
+        background-color: $services-card-cs;
+
+        .services {
+          &__card {
+            &-icon {
+              color: $services-card-cs;
+            }
+            &-inner {
+              &-heading {
+                &-container {
+                  background-color: $services-card-white;
+                }
+              }
+              &-btn {
+                color: $services-card-cs;
+              }
+            }
+          }
+        }
+      }
     }
 
     &--developer-training {
+      .services {
+        &__card {
+          &-inner {
+            &-heading {
+              &-container {
+                background-color: $services-card-dt;
+              }
+            }
+            &-btn {
+              background-color: $services-card-dt;
+            }
+          }
+        }
+      }
+      &:hover {
+        background-color: $services-card-dt;
+
+        .services {
+          &__card {
+            &-icon {
+              color: $services-card-dt;
+            }
+            &-inner {
+              &-heading {
+                &-container {
+                  background-color: $services-card-white;
+                }
+              }
+              &-btn {
+                color: $services-card-dt;
+              }
+            }
+          }
+        }
+      }
     }
   }
 
