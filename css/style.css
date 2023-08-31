@@ -7,7 +7,7 @@
   line-height: 22px;
 }
 
-.newsletter-form__btn, .latest-news__card-content-btn {
+.newsletter-form__btn, .latest-news__card-content-btn, .services__card-inner-btn {
   display: inline-block;
   border: 1px solid transparent;
   border-radius: 3px;
@@ -21,6 +21,17 @@
   border-color: #5bc0de;
   outline: 0;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(91, 192, 222, 0.6);
+}
+
+.latest-news__card-content, .services__card {
+  border: 1px solid #ccc;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+}
+
+.services__card-inner-heading-container, .services__card-inner-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 :root {
@@ -41,69 +52,123 @@
 
 .services {
   display: grid;
-  row-gap: 30px;
 }
-@media screen and (min-width: 768px) {
+.services__card {
+  text-align: center;
+  border-radius: 15px;
+  margin-top: 30px;
+  padding: 30px;
+  transition: all 0.5s ease;
+}
+.services__card:hover {
+  transform: translateY(-10px);
+  color: #fff;
+}
+.services__card:hover .services__card-inner-heading-container {
+  background-color: #fff;
+}
+.services__card:hover .services__card-inner-btn {
+  background-color: #fff;
+}
+.services__card-icon {
+  color: #fff;
+}
+.services__card-inner-heading {
+  padding: 5px;
+}
+.services__card-inner-heading-container {
+  border-radius: 50%;
+  width: 65px;
+  height: 65px;
+}
+.services__card-inner-title {
+  font-weight: 400;
+  font-size: 1.3rem;
+  margin: 0 0 20px;
+}
+.services__card-inner-text {
+  margin: 0 0 13px;
+  font-size: 13px;
+}
+.services__card--bespoke-software .services__card-inner-heading-container {
+  background-color: #67809f;
+}
+.services__card--bespoke-software .services__card-inner-btn {
+  background-color: #67809f;
+}
+.services__card--bespoke-software:hover {
+  background-color: #67809f;
+}
+.services__card--bespoke-software:hover .services__card-icon {
+  color: #67809f;
+}
+.services__card--bespoke-software:hover .services__card-inner-heading-container {
+  background-color: #fff;
+}
+.services__card--bespoke-software:hover .services__card-inner-btn {
+  color: #67809f;
+}
+@media screen and (min-width: 992px) {
   .services {
     grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
     grid-template-rows: auto;
     column-gap: 30px;
   }
-  .services__item--bespoke-software {
+  .services__card--bespoke-software {
     grid-row: 1/2;
     grid-column: 1/3;
   }
-  .services__item--it-support {
+  .services__card--it-support {
     grid-row: 1/2;
     grid-column: 3/5;
   }
-  .services__item--digital-marketing {
+  .services__card--digital-marketing {
     grid-row: 1/2;
     grid-column: 5/7;
   }
-  .services__item--telecoms-services {
+  .services__card--telecoms-services {
     grid-row: 2/3;
     grid-column: 1/4;
   }
-  .services__item--web-design {
+  .services__card--web-design {
     grid-row: 2/3;
     grid-column: 4/7;
   }
-  .services__item--cyber-security {
+  .services__card--cyber-security {
     grid-row: 3/4;
     grid-column: 1/4;
   }
-  .services__item--developer-training {
+  .services__card--developer-training {
     grid-row: 3/4;
     grid-column: 4/7;
   }
 }
 @media screen and (min-width: 1260px) {
-  .services__item--bespoke-software {
+  .services__card--bespoke-software {
     grid-row: 1/2;
     grid-column: 1/5;
   }
-  .services__item--it-support {
+  .services__card--it-support {
     grid-row: 1/2;
     grid-column: 5/9;
   }
-  .services__item--digital-marketing {
+  .services__card--digital-marketing {
     grid-row: 1/2;
     grid-column: 9/13;
   }
-  .services__item--telecoms-services {
+  .services__card--telecoms-services {
     grid-row: 2/3;
     grid-column: 1/4;
   }
-  .services__item--web-design {
+  .services__card--web-design {
     grid-row: 2/3;
     grid-column: 4/7;
   }
-  .services__item--cyber-security {
+  .services__card--cyber-security {
     grid-row: 2/3;
     grid-column: 7/10;
   }
-  .services__item--developer-training {
+  .services__card--developer-training {
     grid-row: 2/3;
     grid-column: 10/13;
   }
@@ -221,8 +286,6 @@
 }
 .latest-news__card-content {
   padding: 30px;
-  border: 1px solid #ccc;
-  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
   border-radius: 0 0 3px 3px;
 }
 .latest-news__card-content-heading {

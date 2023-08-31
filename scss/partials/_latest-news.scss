@@ -118,8 +118,7 @@
 
     &-content {
       padding: 30px;
-      border: 1px solid #ccc;
-      box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+      @extend %card-shadow-border;
       border-radius: 0 0 3px 3px;
       &-heading {
         margin-top: 0;
