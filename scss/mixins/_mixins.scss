@@ -21,3 +21,19 @@
     @error ('Unknown breakpoint supplied');
   }
 }
+
+// top nav logo size
+@mixin top-nav-logo-size($width) {
+  width: 100%;
+  @if ($width == "xs") {
+    max-width: 402px;
+  } @else if($width == "s") {
+    max-width: 345px;
+  } @else if($width == "m") {
+    max-width: 374px;
+  } @else if($width == "l") {
+    max-width: 370px;
+  } @else {
+    @error ('Unknown width supplied');
+  }
+}

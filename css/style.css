@@ -68,6 +68,99 @@
   max-width: 1260px;
 }
 
+.mobile-search {
+  display: flex;
+  padding: 10px 15px;
+  margin-top: 10px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+}
+.mobile-search__input {
+  font-weight: inherit;
+  font-size: 14px;
+  padding: 5px 0;
+  background-color: transparent;
+  color: #555;
+  border: none;
+  width: 100%;
+}
+.mobile-search__input:focus {
+  outline: none;
+}
+.mobile-search__btn {
+  background-color: transparent;
+  border: none;
+}
+.mobile-search__btn:hover {
+  cursor: pointer;
+}
+.mobile-search__icon {
+  font-weight: 600;
+}
+@media screen and (min-width: 768px) {
+  .mobile-search {
+    display: none;
+  }
+}
+
+.top-nav__container {
+  display: flex;
+  flex-direction: column;
+}
+.top-nav__main {
+  display: flex;
+  align-items: center;
+}
+.top-nav__logo-container {
+  margin-right: auto;
+}
+.top-nav__logo {
+  margin-right: auto;
+  width: 100%;
+  max-width: 402px;
+}
+@media screen and (min-width: 768px) {
+  .top-nav__logo {
+    width: 100%;
+    max-width: 345px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .top-nav__logo {
+    width: 100%;
+    max-width: 374px;
+  }
+}
+@media screen and (min-width: 1260px) {
+  .top-nav__logo {
+    width: 100%;
+    max-width: 370px;
+  }
+}
+.top-nav__phone-icon {
+  margin-left: 20px;
+}
+.top-nav__hamburger {
+  background-color: #333645;
+  border-radius: 3px;
+  padding: 10px 15px;
+  margin-left: 20px;
+}
+.top-nav__hamburger:hover {
+  cursor: pointer;
+  background-color: #22242e;
+}
+.top-nav__hamburger-bars {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.full-width-container--top-nav {
+  padding: 20px 0;
+  background-color: #fff;
+}
+
 .main-nav__item {
   flex: 1;
 }

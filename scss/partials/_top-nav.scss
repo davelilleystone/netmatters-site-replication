@@ -1,0 +1,88 @@
+.mobile-search {
+  display: flex;
+  padding: 10px 15px;
+  margin-top: 10px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  &__input {
+    font-weight: inherit;
+    font-size: 14px;
+    padding: 5px 0;
+    background-color: transparent;
+    color: #555;
+    border: none;
+    width: 100%;
+    &:focus {
+      outline: none;
+    }
+  }
+  &__btn {
+    background-color: transparent;
+    border: none;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__icon {
+    font-weight: $font-weight-semi-bold;
+  }
+  @include mq($mq-s) {
+    display: none;
+  }
+}
+
+.top-nav {
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+  &__main {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo-container {
+    margin-right: auto;
+  }
+
+  &__logo {
+    margin-right: auto;
+    @include top-nav-logo-size(xs);
+    @include mq($mq-s) {
+      @include top-nav-logo-size(s);
+    }
+    @include mq($mq-m) {
+      @include top-nav-logo-size(m);
+    }
+    @include mq($mq-l) {
+      @include top-nav-logo-size(l);
+    }
+  }
+
+  &__phone-icon {
+    margin-left: 20px;
+  }
+
+  &__hamburger {
+    background-color: $base-font-color;
+    border-radius: 3px;
+    padding: 10px 15px;
+    margin-left: 20px;
+    &:hover {
+      cursor: pointer;
+      background-color: $baltic-sea;
+    }
+  }
+
+  &__hamburger-bars {
+    font-size: 2rem;
+    color: $white;
+  }
+}
+
+.full-width-container--top-nav {
+  padding: 20px 0;
+  background-color: $white;
+}
