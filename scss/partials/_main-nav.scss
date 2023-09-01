@@ -2,8 +2,19 @@
   &__item {
     flex: 1;
 
-    &:hover &-sub-menu {
-      display: block;
+    &:hover {
+      .main-nav {
+        &__item {
+          &-sub-menu {
+            display: block;
+          }
+          &-container {
+            &-icon {
+              color: $white;
+            }
+          }
+        }
+      }
     }
 
     &-container {
@@ -31,6 +42,7 @@
       left: 0;
       right: 0;
       top: 100%;
+
       color: white;
     }
 
@@ -54,9 +66,155 @@
             &-container {
               &::after {
               }
-
-              &-icon {
-                color: $white;
+            }
+          }
+        }
+      }
+    }
+    &--it-support {
+      .main-nav {
+        &__item {
+          &-container {
+            &-icon {
+              color: $services-is;
+            }
+          }
+        }
+      }
+      &:hover {
+        background-color: $services-is;
+        .main-nav {
+          &__item {
+            &-sub-menu {
+              background-color: $services-is-sub-menu;
+            }
+            &-container {
+              &::after {
+              }
+            }
+          }
+        }
+      }
+    }
+    &--digital-marketing {
+      .main-nav {
+        &__item {
+          &-container {
+            &-icon {
+              color: $services-dm;
+            }
+          }
+        }
+      }
+      &:hover {
+        background-color: $services-dm;
+        .main-nav {
+          &__item {
+            &-sub-menu {
+              background-color: $services-dm-sub-menu;
+            }
+            &-container {
+              &::after {
+              }
+            }
+          }
+        }
+      }
+    }
+    &--telecoms-services {
+      .main-nav {
+        &__item {
+          &-container {
+            &-icon {
+              color: $services-ts;
+            }
+          }
+        }
+      }
+      &:hover {
+        background-color: $services-ts;
+        .main-nav {
+          &__item {
+            &-sub-menu {
+              background-color: $services-ts-sub-menu;
+            }
+            &-container {
+              &::after {
+              }
+            }
+          }
+        }
+      }
+    }
+    &--web-design {
+      .main-nav {
+        &__item {
+          &-container {
+            &-icon {
+              color: $services-wd;
+            }
+          }
+        }
+      }
+      &:hover {
+        background-color: $services-wd;
+        .main-nav {
+          &__item {
+            &-sub-menu {
+              background-color: $services-wd-sub-menu;
+            }
+            &-container {
+              &::after {
+              }
+            }
+          }
+        }
+      }
+    }
+    &--cyber-security {
+      .main-nav {
+        &__item {
+          &-container {
+            &-icon {
+              color: $services-cs;
+            }
+          }
+        }
+      }
+      &:hover {
+        background-color: $services-cs;
+        .main-nav {
+          &__item {
+            &-sub-menu {
+              background-color: $services-cs-sub-menu;
+            }
+            &-container {
+              &::after {
+              }
+            }
+          }
+        }
+      }
+    }
+    &--developer-training {
+      .main-nav {
+        &__item {
+          &-container {
+            &-icon {
+              color: $services-dt;
+            }
+          }
+        }
+      }
+      &:hover {
+        background-color: $services-dt;
+        .main-nav {
+          &__item {
+            &-sub-menu {
+              background-color: $services-dt-sub-menu;
+            }
+            &-container {
+              &::after {
               }
             }
           }
@@ -68,15 +226,46 @@
   &__items {
     display: flex;
     justify-content: space-between;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+    @extend %reset-ul;
   }
 }
 
-// menu item colors and hovers
+.submenu-nav {
+  padding: 50px 0;
+  &__title {
+    font-size: 32px;
+    font-weight: $font-weight-regular;
+    line-height: 1.1;
+    margin: 5px 0 35px;
+  }
+  &__items {
+    @extend %reset-ul;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+  }
+  &__item {
+    width: 33%;
+    padding-bottom: 30px;
+  }
+  &__item-container {
+    @extend %reset-anchor-text;
+    display: flex;
+    font-size: 20px;
+    &:hover .submenu-nav__text {
+      text-decoration: underline;
+    }
+  }
+  &__icon {
+    margin-right: 10px;
+  }
+}
 
 .full-width-container--main-nav {
   background-color: $main-nav-bg;
   position: relative;
+  display: none;
+  @include mq($mq-m) {
+    display: block;
+  }
 }

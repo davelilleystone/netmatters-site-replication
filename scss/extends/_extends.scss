@@ -49,3 +49,17 @@
   justify-content: center;
   align-items: center;
 }
+
+// reset ul
+%reset-ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+// reset anchor
+
+%reset-anchor-text {
+  text-decoration: none;
+  color: white;
+}
