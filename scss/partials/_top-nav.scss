@@ -6,16 +6,8 @@
   border-radius: 3px;
   border: 2px solid rgba(0, 0, 0, 0.2);
   &__input {
-    font-weight: inherit;
-    font-size: 14px;
-    padding: 5px 0;
-    background-color: transparent;
-    color: #555;
-    border: none;
-    width: 100%;
-    &:focus {
-      outline: none;
-    }
+    @extend %top-nav-search-input;
+    @include input-hide-focus;
   }
   &__btn {
     background-color: transparent;
@@ -31,6 +23,9 @@
   @include mq($mq-s) {
     display: none;
   }
+}
+
+.search {
 }
 
 .top-nav {

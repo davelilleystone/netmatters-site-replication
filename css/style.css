@@ -52,6 +52,16 @@
   color: white;
 }
 
+.mobile-search__input {
+  font-weight: inherit;
+  font-size: 14px;
+  padding: 5px 0;
+  background-color: transparent;
+  color: #555;
+  border: none;
+  width: 100%;
+}
+
 :root {
   letter-spacing: 0.4px;
   font-family: "Poppins", "sans-serif";
@@ -75,15 +85,6 @@
   background-color: rgba(0, 0, 0, 0.1);
   border-radius: 3px;
   border: 2px solid rgba(0, 0, 0, 0.2);
-}
-.mobile-search__input {
-  font-weight: inherit;
-  font-size: 14px;
-  padding: 5px 0;
-  background-color: transparent;
-  color: #555;
-  border: none;
-  width: 100%;
 }
 .mobile-search__input:focus {
   outline: none;

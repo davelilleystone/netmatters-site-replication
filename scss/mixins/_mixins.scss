@@ -37,3 +37,10 @@
     @error ('Unknown width supplied');
   }
 }
+
+// top nav hide outline on focus
+@mixin input-hide-focus {
+  &:focus {
+    outline: none;
+  }
+}
