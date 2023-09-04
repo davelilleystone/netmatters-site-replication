@@ -38,6 +38,7 @@
 
     &-sub-menu {
       display: none;
+      z-index: 10;
       position: absolute;
       left: 0;
       right: 0;
