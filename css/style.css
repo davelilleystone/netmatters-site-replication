@@ -64,7 +64,7 @@
 
 .search__btn {
   background-color: #999aa2;
-  padding: 19px 18px;
+  padding: 19px 20px;
   border: none;
   border-radius: 0 3px 3px 0;
 }
@@ -190,7 +190,7 @@
 @media screen and (min-width: 1260px) {
   .search {
     display: flex;
-    width: 19.5rem;
+    width: 19rem;
     order: 3;
   }
 }
