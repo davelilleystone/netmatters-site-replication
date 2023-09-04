@@ -1,33 +1,3 @@
-.mobile-search {
-  display: flex;
-  padding: 10px 15px;
-  margin-top: 10px;
-  background-color: rgba(0, 0, 0, 0.1);
-  border-radius: 3px;
-  border: 2px solid rgba(0, 0, 0, 0.2);
-  &__input {
-    @extend %top-nav-search-input;
-    @include input-hide-focus;
-  }
-  &__btn {
-    background-color: transparent;
-    border: none;
-    &:hover {
-      cursor: pointer;
-    }
-  }
-
-  &__icon {
-    font-weight: $font-weight-semi-bold;
-  }
-  @include mq($mq-s) {
-    display: none;
-  }
-}
-
-.search {
-}
-
 .top-nav {
   &__container {
     display: flex;
@@ -58,12 +28,16 @@
 
   &__phone-icon {
     margin-left: 20px;
+    @include mq($mq-s) {
+      display: none;
+    }
   }
 
   &__hamburger {
+    order: 4;
     background-color: $base-font-color;
     border-radius: 3px;
-    padding: 10px 15px;
+    padding: 8px 15px;
     margin-left: 20px;
     &:hover {
       cursor: pointer;
@@ -72,7 +46,120 @@
   }
 
   &__hamburger-bars {
-    font-size: 2rem;
+    font-size: 2.5rem;
+    color: $white;
+  }
+}
+
+.mobile-search {
+  display: flex;
+  padding: 10px 15px;
+  margin-top: 10px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  &__input {
+    @extend %top-nav-search-input;
+    @include input-hide-focus;
+  }
+  &__btn {
+    background-color: transparent;
+    border: none;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__icon {
+    font-weight: $font-weight-semi-bold;
+  }
+  @include mq($mq-s) {
+    display: none;
+  }
+}
+
+.search {
+  display: none;
+
+  @include mq($mq-s) {
+    display: flex;
+  }
+
+  @include mq($mq-m) {
+    display: none;
+  }
+
+  @include mq($mq-l) {
+    display: flex;
+    width: 19.5rem;
+    order: 3;
+  }
+
+  &__input {
+    padding-left: 15px;
+    border: 1px solid #ccc;
+    @extend %top-nav-search-input;
+    &:focus {
+      border-color: #5bc0de;
+      outline: 0;
+      box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(91, 192, 222, 0.6);
+    }
+    @include mq($mq-m) {
+      display: none;
+    }
+
+    @include mq($mq-l) {
+      display: block;
+    }
+  }
+
+  &__btn {
+    @extend %top-nav-search-btn;
+    &--standalone {
+      display: none;
+
+      @include mq($mq-m) {
+        display: block;
+      }
+
+      @include mq($mq-l) {
+        display: none;
+      }
+    }
+  }
+
+  &__std-btn {
+    display: none;
+    @extend %std-button;
+    font-size: 18px;
+    padding: 16.5px 15px;
+    margin-right: 20px;
+    background-color: black;
+    @include mq($mq-m) {
+      display: block;
+    }
+    &-icon {
+      display: inline-block;
+      margin-right: 0.5rem;
+    }
+    &--support {
+      background-color: $windows-blue;
+      &:hover {
+        background-color: #2a6ec6;
+        border-color: #2665b5;
+      }
+    }
+
+    &--contact {
+      background-color: $stardust;
+      &:hover {
+        background-color: #84858f;
+        border-color: #797a85;
+      }
+    }
+  }
+
+  &__icon {
     color: $white;
   }
 }

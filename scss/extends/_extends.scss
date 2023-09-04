@@ -75,3 +75,16 @@
   border: none;
   width: 100%;
 }
+
+//top nav search button
+
+%top-nav-search-btn {
+  background-color: $topnav-search-btn;
+  padding: 19px 18px;
+  border: none;
+  border-radius: 0 3px 3px 0;
+  &:hover {
+    background-color: $gunsmoke;
+    cursor: pointer;
+  }
+}
