@@ -1,0 +1,29 @@
+.full-width-container--partners {
+  padding: 50px 0;
+}
+
+.partners {
+  @extend %reset-ul;
+  //   overflow-x: hidden;
+  //   display: flex;
+  //   justify-content: start;
+  @extend %slider-container;
+
+  &__items {
+    // display: flex;
+    // align-items: center;
+    // margin-right: 50px;
+    @extend %slider-li;
+  }
+
+  &__image {
+    @extend %slider-images;
+    // display: inline-block;
+    // max-height: 70px;
+    // padding: 0 20px;
+    // filter: grayscale(80);
+    // &:hover {
+    //   filter: grayscale(0);
+    // }
+  }
+}

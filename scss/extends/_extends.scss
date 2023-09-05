@@ -88,3 +88,31 @@
     cursor: pointer;
   }
 }
+
+// slider container
+
+%slider-container {
+  overflow-x: hidden;
+  display: flex;
+  justify-content: start;
+}
+
+// slider items
+
+%slider-li {
+  display: flex;
+  align-items: center;
+  margin-right: 50px;
+}
+
+// slider images
+
+%slider-images {
+  display: inline-block;
+  max-height: 70px;
+  padding: 0 20px;
+  filter: grayscale(80);
+  &:hover {
+    filter: grayscale(0);
+  }
+}
