@@ -17,21 +17,38 @@
     text-align: center;
     padding: 40px 0;
     font-weight: $font-weight-semi-bold;
+    @include mq($mq-m) {
+      text-align: left;
+      align-items: start;
+      justify-content: start;
+      padding: 60px 0;
+    }
   }
 
   &__heading {
     font-size: 2.5rem;
     line-height: 3rem;
     font-weight: inherit;
+    @include mq($mq-m) {
+      line-height: 5rem;
+      font-size: 4rem;
+      margin-bottom: 20px;
+    }
   }
   &__text {
     font-size: 1.25rem;
     line-height: 1.75rem;
+    margin: 0 0 6px;
+    @include mq($mq-m) {
+      font-size: 1.625rem;
+      line-height: 2.5rem;
+    }
   }
 
   &__btn {
     @extend %std-button;
     padding: 20px;
+    margin: 2rem 0 1.1rem;
     font-weight: $font-weight-regular;
     font-size: 1.25rem;
     background-color: $hero-btn-primary;
