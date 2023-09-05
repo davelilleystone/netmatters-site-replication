@@ -9,7 +9,7 @@
     @extend %slider-li;
     position: relative;
     justify-content: center;
-    padding-top: 50px;
+    padding: 50px 0px;
     &:hover .clients__content {
       display: block;
     }
@@ -32,10 +32,22 @@
   &__content-container {
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
     margin: 15px;
     text-align: center;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 0;
+      height: 0;
+      border-left: 2rem solid transparent;
+      border-right: 2rem solid transparent;
+      border-top: 2rem solid #323544;
+    }
   }
 
   &__heading {

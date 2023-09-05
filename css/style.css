@@ -750,7 +750,6 @@
   align-items: center;
   font-weight: 600;
   color: #333645;
-  padding-top: 50px;
 }
 .latest-news-header h2 {
   font-size: 36px;
@@ -940,7 +939,7 @@
 .clients__item {
   position: relative;
   justify-content: center;
-  padding-top: 50px;
+  padding: 50px 0px;
 }
 .clients__item:hover .clients__content {
   display: block;
@@ -957,10 +956,22 @@
 .clients__content-container {
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
   margin: 15px;
   text-align: center;
+}
+.clients__content-container::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 2rem solid transparent;
+  border-right: 2rem solid transparent;
+  border-top: 2rem solid #323544;
 }
 .clients__heading {
   font-weight: 400;
