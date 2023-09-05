@@ -1,0 +1,70 @@
+.full-width-container--clients {
+}
+
+.clients {
+  @extend %reset-ul;
+  @extend %slider-container;
+
+  &__item {
+    @extend %slider-li;
+    position: relative;
+    justify-content: center;
+    padding-top: 50px;
+    &:hover .clients__content {
+      display: block;
+    }
+  }
+
+  &__image {
+    @extend %slider-images;
+  }
+
+  &__content {
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    background-color: $client-bg;
+    color: white;
+    min-width: 300px;
+    border-radius: 3px;
+  }
+
+  &__content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    margin: 15px;
+    text-align: center;
+  }
+
+  &__heading {
+    font-weight: $font-weight-regular;
+    font-size: 18px;
+    padding: 0 0 17px;
+    margin: 0;
+  }
+
+  &__text {
+    font-size: 13px;
+    margin: 0;
+  }
+
+  &__btn {
+    @extend %std-button;
+    margin-top: 10px;
+    background-color: $windows-blue;
+    text-transform: uppercase;
+    &:hover {
+      background-color: #2a6ec6;
+      border-color: #2665b5;
+    }
+  }
+
+  &__content-link {
+    @extend %reset-anchor-text;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

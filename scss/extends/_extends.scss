@@ -92,9 +92,9 @@
 // slider container
 
 %slider-container {
-  overflow-x: hidden;
   display: flex;
   justify-content: start;
+  overflow-x: clip;
 }
 
 // slider items

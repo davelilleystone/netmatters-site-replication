@@ -7,7 +7,7 @@
   line-height: 22px;
 }
 
-.newsletter-form__btn, .latest-news__card-content-btn, .services__card-inner-btn, .hero__btn, .search__std-btn {
+.newsletter-form__btn, .clients__btn, .latest-news__card-content-btn, .services__card-inner-btn, .hero__btn, .search__std-btn {
   display: inline-block;
   border: 1px solid transparent;
   border-radius: 3px;
@@ -41,13 +41,13 @@
   align-items: center;
 }
 
-.partners, .submenu-nav__items, .main-nav__items {
+.clients, .partners, .submenu-nav__items, .main-nav__items {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-.submenu-nav__item-container {
+.clients__content-link, .submenu-nav__item-container {
   text-decoration: none;
   color: white;
 }
@@ -73,25 +73,25 @@
   cursor: pointer;
 }
 
-.partners {
-  overflow-x: hidden;
+.clients, .partners {
   display: flex;
   justify-content: start;
+  overflow-x: clip;
 }
 
-.partners__items {
+.clients__item, .partners__item {
   display: flex;
   align-items: center;
   margin-right: 50px;
 }
 
-.partners__image {
+.clients__image, .partners__image {
   display: inline-block;
   max-height: 70px;
   padding: 0 20px;
   filter: grayscale(80);
 }
-.partners__image:hover {
+.clients__image:hover, .partners__image:hover {
   filter: grayscale(0);
 }
 
@@ -935,6 +935,54 @@
   .latest-news__bottom-nav::after {
     display: none;
   }
+}
+
+.clients__item {
+  position: relative;
+  justify-content: center;
+  padding-top: 50px;
+}
+.clients__item:hover .clients__content {
+  display: block;
+}
+.clients__content {
+  display: none;
+  position: absolute;
+  bottom: 100%;
+  background-color: #333645;
+  color: white;
+  min-width: 300px;
+  border-radius: 3px;
+}
+.clients__content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  margin: 15px;
+  text-align: center;
+}
+.clients__heading {
+  font-weight: 400;
+  font-size: 18px;
+  padding: 0 0 17px;
+  margin: 0;
+}
+.clients__text {
+  font-size: 13px;
+  margin: 0;
+}
+.clients__btn {
+  margin-top: 10px;
+  background-color: #4183d7;
+  text-transform: uppercase;
+}
+.clients__btn:hover {
+  background-color: #2a6ec6;
+  border-color: #2665b5;
+}
+.clients__content-link:hover {
+  text-decoration: underline;
 }
 
 .newsletter-form {

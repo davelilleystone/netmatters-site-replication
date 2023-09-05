@@ -6,7 +6,7 @@
   @extend %reset-ul;
   @extend %slider-container;
 
-  &__items {
+  &__item {
     @extend %slider-li;
   }
 
