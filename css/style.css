@@ -1026,6 +1026,42 @@
 .latest-news__card:hover {
   transform: translateY(-10px);
 }
+.latest-news__bottom-nav {
+  display: flex;
+  justify-content: center;
+  padding: 15px 0;
+  font-weight: 600;
+}
+@media screen and (min-width: 768px) {
+  .latest-news__bottom-nav {
+    display: none;
+  }
+}
+.latest-news__bottom-nav a {
+  font-size: 26px;
+  font-weight: inherit;
+  color: inherit;
+  text-decoration: none;
+  display: inline;
+}
+@media screen and (min-width: 768px) {
+  .latest-news__bottom-nav a {
+    display: none;
+  }
+}
+.latest-news__bottom-nav a:hover {
+  text-decoration: underline;
+}
+.latest-news__bottom-nav::after {
+  content: "➔";
+  font-size: 26px;
+  display: inline;
+}
+@media screen and (min-width: 768px) {
+  .latest-news__bottom-nav::after {
+    display: none;
+  }
+}
 
 .clients__item {
   position: relative;
