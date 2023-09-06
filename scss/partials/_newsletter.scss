@@ -1,11 +1,11 @@
 .newsletter-form {
   color: $ship-grey;
-  // margin: px-to-rem(50px) 0;
+  padding: px-to-rem(50px) 0;
   font-weight: $font-weight-semi-bold;
   &__heading {
     font-size: 2rem;
     font-weight: $font-weight-regular;
-    margin-bottom: px-to-rem(15px);
+    margin: 0 0 px-to-rem(15px);
   }
 
   &__inputs {

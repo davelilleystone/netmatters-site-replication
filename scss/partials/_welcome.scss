@@ -1,0 +1,105 @@
+.full-width-container--bg-welcome {
+  background-color: $welcome-bg;
+  color: $white;
+}
+
+.welcome {
+  padding-top: px-to-rem(50px);
+  @extend %flex-column;
+  @include mq($mq-m) {
+    flex-direction: row;
+    column-gap: 2%;
+  }
+
+  &__content-wrapper {
+    line-height: px-to-rem(30px);
+    margin-bottom: 50px;
+    @extend %flex-column;
+    @include mq($mq-m) {
+      width: 49%;
+    }
+  }
+
+  &__heading {
+    font-size: 2rem;
+    font-weight: $font-weight-semi-bold;
+    text-transform: capitalize;
+    margin: 0 0 px-to-rem(40px);
+  }
+
+  &__text {
+    line-height: px-to-rem(30px);
+    margin: 0 0 25px;
+    &--semi-bold {
+      font-weight: 700;
+    }
+  }
+
+  &__text-link {
+    @extend %reset-anchor-text;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__btn-container {
+    margin-top: auto;
+    @extend %flex-column;
+    align-items: start;
+    row-gap: 15px;
+
+    @include mq($mq-s) {
+      flex-direction: row;
+    }
+    @include mq($mq-m) {
+      flex-direction: column;
+    }
+    @include mq($mq-l) {
+      flex-direction: row;
+    }
+  }
+
+  &__button {
+    @extend %std-button;
+    font-size: 20px;
+    margin-right: px-to-rem(7.5px);
+    &--thunder {
+      background-color: $welcome-ch-cul-btn;
+      &:hover {
+        background-color: $welcome-ch-cul-btn-h;
+      }
+    }
+    &--google {
+      background-color: $welcome-google-btn;
+      &:hover {
+        background-color: $welcome-google-btn-h;
+      }
+    }
+    &--tp {
+      background-color: $welcome-tp-btn;
+      &:hover {
+        background-color: $welcome-tp-btn-h;
+      }
+    }
+  }
+
+  &__ratings {
+    color: orange;
+    font-size: 50px;
+  }
+
+  &__quote {
+    font-weight: 600;
+    font-size: 1.3rem;
+    font-style: italic;
+    margin: 40px 0;
+    &-author {
+      color: #a3a8ac;
+    }
+    &-details {
+      font-size: 1.1rem;
+      font-weight: $font-weight-semi-bold;
+      margin-bottom: 50px;
+    }
+  }
+}

@@ -29,6 +29,7 @@
     font-size: 2.5rem;
     line-height: 3rem;
     font-weight: inherit;
+    margin-top: 0;
     @include mq($mq-m) {
       line-height: 5rem;
       font-size: 4rem;
@@ -70,8 +71,8 @@
 
 .full-width-container--hero {
   position: relative;
-  min-height: px-to-rem(600px);
-  max-height: px-to-rem(600px);
+  min-height: px-to-rem(550px);
+  max-height: px-to-rem(550px);
   overflow: hidden;
   background: linear-gradient(270deg, transparent 25%, #000), url("../img/hero/home.png") no-repeat center / cover;
 }
