@@ -1,6 +1,21 @@
 .services {
   display: grid;
 
+  &-header {
+    padding-bottom: 10px;
+    @include top-sub-heading;
+
+    h2 {
+      font-size: px-to-rem(43px);
+      margin-bottom: 0;
+    }
+  }
+
+  &-footer {
+    @include bottom-sub-heading;
+    padding-top: 25px;
+  }
+
   &__card {
     @extend %card-shadow-border;
     text-align: center;

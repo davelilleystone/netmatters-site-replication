@@ -1,38 +1,5 @@
 .latest-news-header {
-  display: flex;
-  align-items: center;
-  font-weight: $font-weight-semi-bold;
-  padding: 50px 0 25px 15px;
-
-  h2 {
-    font-size: 36px;
-    font-weight: inherit;
-    margin: 5px auto 10px 0;
-  }
-
-  a {
-    font-size: 26px;
-    font-weight: inherit;
-    color: inherit;
-    text-decoration: none;
-    display: none;
-    @include mq($mq-s) {
-      display: inline;
-    }
-  }
-
-  a:hover {
-    text-decoration: underline;
-  }
-
-  &::after {
-    content: "\2794";
-    font-size: 26px;
-    display: none;
-    @include mq($mq-s) {
-      display: inline;
-    }
-  }
+  @include top-sub-heading;
 }
 
 .latest-news {
@@ -192,36 +159,6 @@
   }
 
   &__bottom-nav {
-    @include mq($mq-s) {
-      display: none;
-    }
-    display: flex;
-    justify-content: center;
-    padding: 15px 0;
-    font-weight: $font-weight-semi-bold;
-
-    a {
-      font-size: 26px;
-      font-weight: inherit;
-      color: inherit;
-      text-decoration: none;
-      display: inline;
-      @include mq($mq-s) {
-        display: none;
-      }
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    &::after {
-      content: "\2794";
-      font-size: 26px;
-      display: inline;
-      @include mq($mq-s) {
-        display: none;
-      }
-    }
+    @include bottom-sub-heading;
   }
 }
