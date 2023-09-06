@@ -33,6 +33,12 @@
   box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
 }
 
+// flex column
+%flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
 // flex horizontal / vertical center - row
 
 %flex-h-v-center {

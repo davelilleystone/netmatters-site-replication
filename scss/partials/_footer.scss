@@ -9,7 +9,7 @@
   flex-direction: column;
   max-width: $inner-max-width;
   color: white;
-  padding-top: 27px;
+  padding: 27px 15px 0;
   font-size: 13px;
 
   @include mq($mq-l) {

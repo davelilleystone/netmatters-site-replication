@@ -1,0 +1,11 @@
+.full-width-container--bg-welcome {
+  background-color: $welcome-bg;
+  color: $white;
+}
+
+.welcome {
+  @extend %flex-column;
+  &__content-wrapper {
+    @extend %flex-column;
+  }
+}
