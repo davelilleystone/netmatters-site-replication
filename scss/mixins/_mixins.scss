@@ -65,18 +65,17 @@
     @include mq($mq-s) {
       display: none;
     }
-  }
+    &:hover {
+      text-decoration: underline;
+    }
 
-  a:hover {
-    text-decoration: underline;
-  }
-
-  &::after {
-    content: "\2794";
-    font-size: 26px;
-    display: inline;
-    @include mq($mq-s) {
-      display: none;
+    &::after {
+      content: "\2794";
+      font-size: 26px;
+      display: inline;
+      @include mq($mq-s) {
+        display: none;
+      }
     }
   }
 }
@@ -104,18 +103,18 @@
     @include mq($mq-s) {
       display: inline;
     }
-  }
 
-  a:hover {
-    text-decoration: underline;
-  }
+    &:hover {
+      text-decoration: underline;
+    }
 
-  &::after {
-    content: "\2794";
-    font-size: 26px;
-    display: none;
-    @include mq($mq-s) {
-      display: inline;
+    &::after {
+      content: "\2794";
+      font-size: 26px;
+      display: none;
+      @include mq($mq-s) {
+        display: inline;
+      }
     }
   }
 }

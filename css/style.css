@@ -551,13 +551,13 @@
 .services-header a:hover {
   text-decoration: underline;
 }
-.services-header::after {
+.services-header a::after {
   content: "➔";
   font-size: 26px;
   display: none;
 }
 @media screen and (min-width: 768px) {
-  .services-header::after {
+  .services-header a::after {
     display: inline;
   }
 }
@@ -592,13 +592,13 @@
 .services-footer a:hover {
   text-decoration: underline;
 }
-.services-footer::after {
+.services-footer a::after {
   content: "➔";
   font-size: 26px;
   display: inline;
 }
 @media screen and (min-width: 768px) {
-  .services-footer::after {
+  .services-footer a::after {
     display: none;
   }
 }
@@ -960,13 +960,13 @@
 .latest-news-header a:hover {
   text-decoration: underline;
 }
-.latest-news-header::after {
+.latest-news-header a::after {
   content: "➔";
   font-size: 26px;
   display: none;
 }
 @media screen and (min-width: 768px) {
-  .latest-news-header::after {
+  .latest-news-header a::after {
     display: inline;
   }
 }
@@ -1130,13 +1130,13 @@
 .latest-news__bottom-nav a:hover {
   text-decoration: underline;
 }
-.latest-news__bottom-nav::after {
+.latest-news__bottom-nav a::after {
   content: "➔";
   font-size: 26px;
   display: inline;
 }
 @media screen and (min-width: 768px) {
-  .latest-news__bottom-nav::after {
+  .latest-news__bottom-nav a::after {
     display: none;
   }
 }
