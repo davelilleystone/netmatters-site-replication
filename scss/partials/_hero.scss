@@ -1,5 +1,7 @@
 .hero {
   &__content-container {
+    display: flex;
+    align-items: center;
     position: absolute;
     top: 0;
     bottom: 0;
