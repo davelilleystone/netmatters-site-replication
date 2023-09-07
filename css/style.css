@@ -1226,6 +1226,8 @@
   border: 1px solid #eee;
   border-radius: 2px;
   height: 2rem;
+  min-width: 0;
+  width: calc(100% - 30px);
 }
 .newsletter-form__inputs-container {
   display: flex;

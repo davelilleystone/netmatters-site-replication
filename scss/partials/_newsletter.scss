@@ -1,3 +1,6 @@
+.newsletter {
+}
+
 .newsletter-form {
   color: $ship-grey;
   padding: px-to-rem(50px) 0;
@@ -22,6 +25,8 @@
     border: 1px solid #eee;
     border-radius: 2px;
     height: 2rem;
+    min-width: 0;
+    width: calc(100% - 30px);
     &:focus {
       @extend %input-focus;
     }
