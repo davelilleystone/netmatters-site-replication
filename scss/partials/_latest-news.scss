@@ -49,6 +49,10 @@
   &__card {
     padding: 10px 0px;
     transition: transform 0.5s ease;
+    position: relative;
+    &-overlay {
+      @extend %anchor-overlay;
+    }
 
     &--hide {
       @include mq($mq-s) {
