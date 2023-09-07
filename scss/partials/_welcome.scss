@@ -44,13 +44,12 @@
 
   &__btn-container {
     margin-top: auto;
-    @extend %flex-column;
+    display: flex;
     align-items: start;
+    column-gap: 5px;
     row-gap: 15px;
+    flex-wrap: wrap;
 
-    @include mq($mq-s) {
-      flex-direction: row;
-    }
     @include mq($mq-m) {
       flex-direction: column;
     }
