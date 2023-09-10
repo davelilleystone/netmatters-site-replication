@@ -19,6 +19,7 @@
     }
 
     &-container {
+      position: relative;
       @extend %flex-h-v-center-col;
       color: white;
       text-decoration: none;
@@ -31,9 +32,27 @@
       &-large-text {
         font-size: 1.1rem;
       }
-
       &-icon {
         margin-bottom: 0;
+      }
+
+      &::after {
+        content: "";
+        display: none;
+        z-index: 11;
+        position: absolute;
+        top: 100%;
+        border-top: 20px solid transparent;
+        border-left: 69px solid transparent;
+        border-right: 69px solid transparent;
+      }
+
+      @include mq($mq-l) {
+        &::after {
+          border-top: 20px solid yellow;
+          border-left: 84px solid transparent;
+          border-right: 84px solid transparent;
+        }
       }
     }
 
@@ -67,6 +86,8 @@
             }
             &-container {
               &::after {
+                display: block;
+                border-top: 20px solid $services-bs;
               }
             }
           }
@@ -92,6 +113,8 @@
             }
             &-container {
               &::after {
+                display: block;
+                border-top: 20px solid $services-is;
               }
             }
           }
@@ -117,6 +140,8 @@
             }
             &-container {
               &::after {
+                display: block;
+                border-top: 20px solid $services-dm;
               }
             }
           }
@@ -142,6 +167,8 @@
             }
             &-container {
               &::after {
+                display: block;
+                border-top: 20px solid $services-ts;
               }
             }
           }
@@ -167,6 +194,8 @@
             }
             &-container {
               &::after {
+                display: block;
+                border-top: 20px solid $services-wd;
               }
             }
           }
@@ -192,6 +221,8 @@
             }
             &-container {
               &::after {
+                display: block;
+                border-top: 20px solid $services-cs;
               }
             }
           }
@@ -217,6 +248,8 @@
             }
             &-container {
               &::after {
+                display: block;
+                border-top: 20px solid $services-dt;
               }
             }
           }
