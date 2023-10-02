@@ -60,6 +60,7 @@
 
   &__button {
     @extend %std-button;
+    border-radius: 6px;
     font-size: 20px;
     margin-right: px-to-rem(7.5px);
     &--thunder {
@@ -84,7 +85,7 @@
 
   &__ratings {
     color: orange;
-    font-size: 50px;
+    font-size: 45px;
   }
 
   &__quote {

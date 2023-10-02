@@ -21,7 +21,7 @@
 
   &__input {
     margin-bottom: 15px;
-    padding: 5px 15px;
+    padding: 5px 16px;
     border: 1px solid #eee;
     border-radius: 2px;
     height: 2rem;
@@ -45,12 +45,8 @@
     }
   }
 
-  &__inputs {
-    margin-bottom: 15px;
-  }
-
   &__label {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     &::after {
       content: " *";
       color: red;

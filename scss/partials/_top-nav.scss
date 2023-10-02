@@ -37,18 +37,48 @@
   &__hamburger {
     order: 4;
     background-color: $base-font-color;
+    border: none;
     border-radius: 3px;
     padding: 8px 15px;
     margin-left: 20px;
+    height: 56px;
     &:hover {
       cursor: pointer;
       background-color: $baltic-sea;
     }
-  }
 
-  &__hamburger-bars {
-    font-size: 2.5rem;
-    color: $white;
+    &-inner-container {
+      height: 100%;
+      display: flex;
+      align-items: center;
+    }
+
+    &-bar,
+    &-bar::after,
+    &-bar::before {
+      display: inline-block;
+      height: 4px;
+      width: 33px;
+      background-color: white;
+    }
+
+    &-bar {
+      position: relative;
+    }
+
+    &-bar::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: -10px;
+    }
+
+    &-bar::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -10px;
+    }
   }
 }
 
@@ -120,6 +150,7 @@
       display: none;
 
       @include mq($mq-m) {
+        border-radius: 3px;
         display: block;
       }
 

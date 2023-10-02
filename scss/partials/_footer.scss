@@ -13,6 +13,7 @@
   font-size: 13px;
 
   @include mq($mq-l) {
+    padding-top: 47px;
     flex-direction: row;
     justify-content: space-between;
   }
@@ -142,10 +143,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 60px;
-    height: 60px;
+    width: 100px;
+    height: 55px;
     background-color: $btn-social-bg;
     text-decoration: none;
+
+    @include mq($mq-xs) {
+      width: 70px;
+    }
 
     &--facebook {
       grid-area: social-links__social-link--facebook;
