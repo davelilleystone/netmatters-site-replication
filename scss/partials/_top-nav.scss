@@ -167,12 +167,12 @@
     padding: 16.5px 15px;
     margin-right: 20px;
     background-color: black;
+
     @include mq($mq-m) {
-      display: block;
+      display: flex;
     }
     &-icon {
-      display: inline-block;
-      margin-right: 0.5rem;
+      margin-right: 0.2rem;
     }
     &--support {
       background-color: $windows-blue;
