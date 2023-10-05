@@ -3,6 +3,7 @@ const headerHeight = header.offsetHeight;
 let lastScrollTop = scrollY;
 
 window.addEventListener("scroll", () => {
+  console.log("listener");
   let st = scrollY;
   // Scrolling down so remove sticky nav
   if (st > lastScrollTop) {
