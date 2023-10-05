@@ -1,0 +1,11 @@
+.hidden-header {
+  position: fixed;
+  width: 100%;
+  z-index: 20;
+  transform: translateY(-100%);
+  transition: transform 0.2s ease-in;
+
+  &.show {
+    transform: translateY(0);
+  }
+}
