@@ -53,31 +53,44 @@
       align-items: center;
     }
 
-    &-bar,
-    &-bar::after,
-    &-bar::before {
+    &-icon,
+    &-icon::after,
+    &-icon::before {
       display: inline-block;
       height: 4px;
       width: 33px;
       background-color: white;
     }
 
-    &-bar {
+    &-icon {
       position: relative;
     }
 
-    &-bar::before {
+    &-icon::before {
       content: "";
       position: absolute;
       left: 0;
       top: -10px;
+      transition: all 0.25s;
     }
 
-    &-bar::after {
+    &-icon::after {
       content: "";
       position: absolute;
       left: 0;
       bottom: -10px;
+      transition: all 0.25s;
+    }
+
+    &-icon.menu-open {
+      height: 0;
+    }
+
+    &-icon.menu-open::before {
+      transform: rotate(45deg) translate(6px, 4px);
+    }
+    &-icon.menu-open::after {
+      transform: rotate(-45deg) translate(7px, -6px);
     }
   }
 }

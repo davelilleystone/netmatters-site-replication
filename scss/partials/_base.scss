@@ -5,9 +5,17 @@
   color: $base-font-color;
 }
 
-.full-width-container {
-  width: 100%;
+html,
+body,
+.main-container,
+.main-content {
+  height: 100%;
+  position: relative;
 }
+
+// .full-width-container {
+//   background-color: white;
+// }
 
 .inner-container {
   padding: 0 px-to-rem(15px);

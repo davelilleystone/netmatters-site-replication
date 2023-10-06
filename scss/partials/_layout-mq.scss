@@ -1,23 +1,11 @@
-// container media queries
+.full-width-container {
+  background-color: white;
+}
 
-// @media screen and (min-width: 768px) {
-//   .inner-container {
-//     max-width: 720px;
-//     margin: 0 auto;
-//   }
-// }
-
-// @media screen and (min-width: 992px) {
-//   .inner-container {
-//     max-width: 970px;
-//   }
-// }
-
-// @media screen and (min-width: 1260px) {
-//   .inner-container {
-//     max-width: 1170px;
-//   }
-// }
+.inner-container {
+  padding: 0 px-to-rem(15px);
+  max-width: $inner-max-width;
+}
 
 @include mq($mq-s) {
   .inner-container {
