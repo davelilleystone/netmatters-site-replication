@@ -1,12 +1,3 @@
-.full-width-container {
-  background-color: white;
-}
-
-.inner-container {
-  padding: 0 px-to-rem(15px);
-  max-width: $inner-max-width;
-}
-
 @include mq($mq-s) {
   .inner-container {
     max-width: 720px;

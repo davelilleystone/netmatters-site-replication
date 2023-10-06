@@ -3,12 +3,19 @@
   right: 0;
   width: 275px;
   height: 100%;
-  background-color: blue;
   z-index: -1;
 
+  .sb-all-screens {
+    &::before {
+      content: "\00BB";
+      display: inline-block;
+      padding-right: 5px;
+    }
+  }
   @include mq($mq-m) {
     width: 350px;
-    background-color: red;
-    z-index: -1;
+    .sb-small-screen {
+      display: none;
+    }
   }
 }

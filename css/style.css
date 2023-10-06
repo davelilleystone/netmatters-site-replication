@@ -625,14 +625,19 @@ body,
   right: 0;
   width: 275px;
   height: 100%;
-  background-color: blue;
   z-index: -1;
+}
+.sidebar .sb-all-screens::before {
+  content: "»";
+  display: inline-block;
+  padding-right: 5px;
 }
 @media screen and (min-width: 992px) {
   .sidebar {
     width: 350px;
-    background-color: red;
-    z-index: -1;
+  }
+  .sidebar .sb-small-screen {
+    display: none;
   }
 }
 
@@ -734,19 +739,17 @@ body,
 .top-nav__hamburger-icon {
   position: relative;
 }
-.top-nav__hamburger-icon::before {
+.top-nav__hamburger-icon::before, .top-nav__hamburger-icon::after {
   content: "";
   position: absolute;
   left: 0;
+  transition: all 0.5s;
+}
+.top-nav__hamburger-icon::before {
   top: -10px;
-  transition: all 0.25s;
 }
 .top-nav__hamburger-icon::after {
-  content: "";
-  position: absolute;
-  left: 0;
   bottom: -10px;
-  transition: all 0.25s;
 }
 .top-nav__hamburger-icon.menu-open {
   height: 0;
@@ -1148,6 +1151,10 @@ body,
   background: linear-gradient(270deg, transparent 25%, #000), url("../img/hero/home.png") no-repeat center/cover;
 }
 
+.full-width-container--services {
+  background-color: white;
+}
+
 .services {
   display: grid;
   grid-template-rows: auto;
@@ -1499,6 +1506,7 @@ body,
 
 .full-width-container--partners {
   padding: 50px 0;
+  background-color: white;
 }
 
 .full-width-container--bg-welcome {
@@ -1598,6 +1606,10 @@ body,
   font-size: 1.1rem;
   font-weight: 600;
   margin-bottom: 50px;
+}
+
+.full-width-container--latest-news {
+  background-color: white;
 }
 
 .latest-news-header {
@@ -1814,6 +1826,10 @@ body,
   .latest-news__bottom-nav a::after {
     display: none;
   }
+}
+
+.full-width-container--clients {
+  background-color: white;
 }
 
 .clients__item {
@@ -2145,15 +2161,6 @@ body,
 }
 .social-links__social-link--instagram:hover {
   background-color: #d93175;
-}
-
-.full-width-container {
-  background-color: white;
-}
-
-.inner-container {
-  padding: 0 0.9375rem;
-  max-width: 1260px;
 }
 
 @media screen and (min-width: 768px) {

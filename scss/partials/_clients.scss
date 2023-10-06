@@ -1,3 +1,7 @@
+.full-width-container--clients {
+  background-color: white;
+}
+
 .clients {
   @extend %reset-ul;
   @extend %slider-container;
