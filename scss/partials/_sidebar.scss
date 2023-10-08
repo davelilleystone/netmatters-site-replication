@@ -3,18 +3,71 @@
   right: 0;
   width: 275px;
   height: 100%;
+  background: #333645;
+  overflow: auto;
   z-index: -1;
 
-  .sb-all-screens {
-    &::before {
-      content: "\00BB";
-      display: inline-block;
-      padding-right: 5px;
+  &.menu-open {
+    z-index: 10;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    // border-top: 1px solid rgba(0, 0, 0, 0.25);
+    // border-bottom: 1px solid hsla(0, 0%, 100%, 0.1);
+
+    li {
+      border-top: 1px solid hsla(0, 0%, 100%, 0.1);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+    }
+
+    a {
+      color: #fff;
+      text-decoration: none;
+      text-transform: uppercase;
     }
   }
+
+  .ls-menu {
+    li:not(.container-heading) {
+      border-top: 1px solid rgba(0, 0, 0, 0.45);
+    }
+
+    .container-heading {
+      cursor: pointer;
+
+      &:hover > .menu-heading {
+        background-color: lighten(#333645, 5%);
+      }
+    }
+
+    .menu-heading {
+      display: block;
+      padding: 20px;
+      font-size: 1rem;
+      line-height: 1;
+    }
+
+    .sub-menu-item {
+      display: block;
+      border-top: 1px solid hsla(0, 0%, 100%, 0.05);
+      background-color: rgba(0, 0, 0, 0.25);
+      font-size: 14px;
+      padding: 17px 20px;
+      line-height: 1;
+    }
+
+    .sub-menu-item::before {
+      content: "\bb";
+      padding-right: 15px;
+    }
+  }
+
   @include mq($mq-m) {
     width: 350px;
-    .sb-small-screen {
+    .ss-menu {
       display: none;
     }
   }
