@@ -35,13 +35,14 @@
   }
 
   &__hamburger {
-    order: 4;
-    background-color: $base-font-color;
-    border: none;
-    border-radius: 3px;
     padding: 8px 15px;
     margin-left: 20px;
     height: 56px;
+    border: none;
+    border-radius: 3px;
+    background-color: $base-font-color;
+    order: 4;
+
     &:hover {
       cursor: pointer;
       background-color: $baltic-sea;

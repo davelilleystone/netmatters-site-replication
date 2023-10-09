@@ -7,6 +7,10 @@
   overflow: auto;
   z-index: -1;
 
+  .ls-only {
+    display: none;
+  }
+
   &.menu-open {
     z-index: 10;
   }
@@ -15,22 +19,21 @@
     list-style: none;
     padding: 0;
     margin: 0;
-    // border-top: 1px solid rgba(0, 0, 0, 0.25);
-    // border-bottom: 1px solid hsla(0, 0%, 100%, 0.1);
-
-    li {
-      border-top: 1px solid hsla(0, 0%, 100%, 0.1);
-      border-bottom: 1px solid rgba(0, 0, 0, 0.25);
-    }
 
     a {
       color: #fff;
       text-decoration: none;
       text-transform: uppercase;
+      display: block;
     }
   }
 
   .ls-menu {
+    li {
+      border-top: 1px solid hsla(0, 0%, 100%, 0.1);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+    }
+
     li:not(.container-heading) {
       border-top: 1px solid rgba(0, 0, 0, 0.45);
     }
@@ -44,14 +47,12 @@
     }
 
     .menu-heading {
-      display: block;
       padding: 20px;
       font-size: 1rem;
       line-height: 1;
     }
 
     .sub-menu-item {
-      display: block;
       border-top: 1px solid hsla(0, 0%, 100%, 0.05);
       background-color: rgba(0, 0, 0, 0.25);
       font-size: 14px;
@@ -65,10 +66,93 @@
     }
   }
 
+  .ss-menu {
+    padding: 21px;
+
+    .heading:hover > a {
+      background-color: lighten(#333645, 5%);
+    }
+    .heading:not(.no-top-padding) {
+      padding: 20px 0 0;
+    }
+
+    .heading > a {
+      font-size: 1.125rem;
+      padding: 19px 0 18px;
+      border-radius: 3px;
+      text-align: center;
+      outline: 1px solid rgba(0, 0, 0, 0.25);
+      border: 1px solid hsla(0, 0%, 100%, 0.1);
+    }
+
+    .sub-menu-container {
+      margin-top: 20px;
+      border-radius: 3px;
+
+      & > li {
+        border-top: 1px solid rgba(0, 0, 0, 0.45);
+      }
+    }
+
+    .sub-menu-item {
+      border-top: 1px solid hsla(0, 0%, 100%, 0.05);
+      background-color: rgba(0, 0, 0, 0.25);
+      text-align: center;
+      padding: 10px;
+    }
+
+    .icn-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      small {
+        font-size: 10px;
+      }
+
+      .icon {
+        padding-bottom: 10px;
+        font-size: 1.75rem;
+      }
+
+      .bespoke-software {
+        color: $services-bs;
+      }
+
+      .it-support {
+        color: $services-is;
+      }
+
+      .digital-marketing {
+        color: $services-dm;
+      }
+
+      .telecoms {
+        color: $services-ts;
+      }
+
+      .web-design {
+        color: $services-wd;
+      }
+
+      .cyber-security {
+        color: $services-cs;
+      }
+
+      .developer-course {
+        color: $services-dt;
+      }
+    }
+  }
+
   @include mq($mq-m) {
     width: 350px;
-    .ss-menu {
+    .ss-only {
       display: none;
+    }
+
+    .ls-only {
+      display: block;
     }
   }
 }

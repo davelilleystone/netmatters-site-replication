@@ -1,11 +1,12 @@
+// header is duplicate of main header
 const header = document.querySelector(".hidden-header");
 const headerHeight = header.offsetHeight;
 let lastScrollTop = window.scrollY;
 
 window.addEventListener("scroll", () => {
   let st = window.scrollY;
-
-  if (st <= 0) {
+  // hide header at
+  if (st === 0) {
     header.style.display = "none";
   } else {
     header.style.display = null;
