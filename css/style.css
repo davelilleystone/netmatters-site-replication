@@ -486,7 +486,7 @@
   line-height: 22px;
 }
 
-.newsletter-form__btn, .clients__btn, .latest-news__card-content-btn, .welcome__button, .services__card-inner-btn, .hero__btn, .search__std-btn {
+.cookie-consent-container button, .newsletter-form__btn, .clients__btn, .latest-news__card-content-btn, .welcome__button, .services__card-inner-btn, .hero__btn, .search__std-btn {
   display: inline-block;
   border: 1px solid transparent;
   border-radius: 3px;
@@ -2287,6 +2287,105 @@ body,
   .inner-container {
     max-width: 1170px;
   }
+}
+body.overflow-hidden {
+  overflow: hidden;
+}
+
+.cookie-info-page,
+.cookie-modal-container,
+.cookie-modal-background {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.cookie-modal-background {
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.cookie-modal-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.cookie-modal {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  max-width: 600px;
+  border: 1px solid #999;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+}
+.cookie-modal > .cookie-button-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  row-gap: 1.5rem;
+}
+@media screen and (min-width: 992px) {
+  .cookie-modal > .cookie-button-container {
+    flex-direction: row;
+    column-gap: 1.5rem;
+  }
+}
+.cookie-modal > .cookie-button-container > .cookie-btn-info {
+  flex: 1;
+  background-color: #999aa2;
+  border-color: #999aa2;
+}
+.cookie-modal > .cookie-button-container > .cookie-btn-info:hover {
+  background-color: #84858f;
+  border-color: #797a85;
+}
+.cookie-modal > .cookie-button-container > .cookie-btn-accept {
+  flex: 1;
+  background-color: #926fb1;
+  border-color: #926fb1;
+}
+.cookie-modal > .cookie-button-container > .cookie-btn-accept:hover {
+  background-color: #7e57a0;
+  border-color: #735093;
+}
+
+.cookie-modal > h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 0;
+  padding: 15px 20px;
+}
+
+.cookie-modal > p {
+  padding: 20px 20px 35px;
+  margin-top: 0;
+  color: #666;
+  line-height: 2;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.cookie-info-page {
+  background-color: yellow;
+  z-index: 3;
+}
+
+.cookie-info-page.hidden {
+  display: none;
+}
+
+.cookie-consent-container button {
+  padding: 12.5px 2rem;
+}
+
+.cookie-consent-container.hidden {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */
