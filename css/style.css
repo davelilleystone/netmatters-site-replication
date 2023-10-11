@@ -1235,15 +1235,13 @@ body,
   margin: 2rem 0 1.1rem;
   font-weight: 400;
   font-size: 1.25rem;
-  background-color: #926fb1;
-}
-.hero__btn:hover {
-  background-color: #7e57a0;
-  border-color: #735093;
 }
 .hero__overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
   width: 100%;
-  min-height: 37.5rem;
+  z-index: 1;
   background-color: rgba(0, 0, 0, 0.4);
 }
 @media screen and (min-width: 992px) {
@@ -1251,13 +1249,67 @@ body,
     display: none;
   }
 }
+.hero--netmatters-overview {
+  background: linear-gradient(270deg, transparent 25%, #000), url("../img/hero/netmatters-overview.png") no-repeat center/cover;
+}
+.hero--netmatters-overview .hero__btn {
+  background-color: #926fb1;
+}
+.hero--netmatters-overview .hero__btn:hover {
+  background-color: #7e57a0;
+  border-color: #735093;
+}
+.hero--bespoke-software {
+  background: linear-gradient(270deg, transparent 25%, #000), url("../img/hero/bespoke-software.webp") no-repeat center/cover;
+}
+.hero--bespoke-software .hero__btn {
+  background-color: #67809f;
+  border-color: #67809f;
+}
+.hero--bespoke-software .hero__btn:hover {
+  background-color: #566c88;
+  border-color: #4e627b;
+}
 
 .full-width-container--hero {
   position: relative;
   min-height: 34.375rem;
   max-height: 34.375rem;
   overflow: hidden;
-  background: linear-gradient(270deg, transparent 25%, #000), url("../img/hero/home.png") no-repeat center/cover;
+}
+
+.slick-container {
+  position: relative;
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: 25px;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.slick-dots li.slick-active button:before {
+  color: white;
+}
+
+.slick-dots li button:before {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.slick-dots li button:before {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.slick-dotted.slick-slider {
+  margin-bottom: 0;
 }
 
 .full-width-container--services {
@@ -2274,18 +2326,18 @@ body,
 
 @media screen and (min-width: 768px) {
   .inner-container {
-    max-width: 720px;
+    width: 720px;
     margin: 0 auto;
   }
 }
 @media screen and (min-width: 992px) {
   .inner-container {
-    max-width: 970px;
+    width: 970px;
   }
 }
 @media screen and (min-width: 1260px) {
   .inner-container {
-    max-width: 1170px;
+    width: 1170px;
   }
 }
 body.overflow-hidden {

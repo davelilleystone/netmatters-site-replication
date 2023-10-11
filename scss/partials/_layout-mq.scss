@@ -1,18 +1,18 @@
 @include mq($mq-s) {
   .inner-container {
-    max-width: 720px;
+    width: 720px;
     margin: 0 auto;
   }
 }
 
 @include mq($mq-m) {
   .inner-container {
-    max-width: 970px;
+    width: 970px;
   }
 }
 
 @include mq($mq-l) {
   .inner-container {
-    max-width: 1170px;
+    width: 1170px;
   }
 }

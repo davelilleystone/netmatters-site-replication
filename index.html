@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
@@ -1129,25 +1131,38 @@
         </header>
 
         <!-- Hero -->
-
-        <div class="full-width-container full-width-container--hero">
+        <div class="slick-container">
           <div class="hero__overlay"></div>
-          <div class="hero__content-container">
-            <div class="hero__content inner-container">
-              <h1 class="hero__heading">The East Of England's Leading Technology Company</h1>
-              <p class="hero__text">
-                Performance-driven digital and technology services <br />
-                with complete transparency
-              </p>
-              <a href="#" class="hero__btn"
-                >why choose us? <span><i class="fa-solid fa-arrow-right fa-sm"></i></span
-              ></a>
+          <div class="full-width-container full-width-container--hero hero--netmatters-overview slick-item">
+            <div class="hero__overlay"></div>
+            <div class="hero__content-container">
+              <div class="hero__content inner-container">
+                <h1 class="hero__heading">The East Of England's Leading Technology Company</h1>
+                <p class="hero__text">
+                  Performance-driven digital and technology services <br />
+                  with complete transparency.
+                </p>
+                <a href="#" class="hero__btn"
+                  >why choose us? <span><i class="fa-solid fa-arrow-right fa-sm"></i></span
+                ></a>
+              </div>
             </div>
           </div>
-
-          <div class="hero__overlay"></div>
+          <div class="full-width-container full-width-container--hero hero--bespoke-software slick-item">
+            <div class="hero__content-container">
+              <div class="hero__content inner-container">
+                <h1 class="hero__heading">Bespoke Software</h1>
+                <p class="hero__text">
+                  Delivering expert bespoke software<br />
+                  solutions across a range of industries.
+                </p>
+                <a href="#" class="hero__btn"
+                  >find out more <span><i class="fa-solid fa-arrow-right fa-sm"></i></span
+                ></a>
+              </div>
+            </div>
+          </div>
         </div>
-
         <!-- Services -->
 
         <div class="full-width-container full-width-container--services">
@@ -1809,5 +1824,9 @@
       <!-- end main-content-->
     </div>
     <!-- end main-container-->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="js/slick.js"></script>
   </body>
 </html>
