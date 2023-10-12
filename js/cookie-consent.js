@@ -20,13 +20,15 @@ const removeOverflowHidden = () => {
   body.classList.remove("overflow-hidden");
 };
 
-const showCookieInfoPage = () => {
-  cookieInforPage.classList.remove("hidden");
-};
+// below is for cookie info page - will come back to this later when I have time
+// const showCookieInfoPage = () => {
+//   cookieInforPage.classList.remove("hidden");
+// };
 
-const hideCookieInfoPage = () => {
-  cookieInforPage.classList.add("hidden");
-};
+// below is for cookie info page - will come back to this later when I have time
+// const hideCookieInfoPage = () => {
+//   cookieInforPage.classList.add("hidden");
+// };
 
 const showCookieConsentContainer = () => {
   cookieConsentContainer.classList.remove("hidden");
@@ -46,7 +48,8 @@ cookieAcceptBtn.forEach((btn) => {
   });
 });
 
-cookieInfoBtn.addEventListener("click", showCookieInfoPage);
+// below is for cookie info page - will come back to this later when I have time
+// cookieInfoBtn.addEventListener("click", showCookieInfoPage);
 
 cookieCancelBtn.addEventListener("click", hideCookieInfoPage);
 

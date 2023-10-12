@@ -4,6 +4,7 @@ const mobileOverlay = document.querySelector(".mobile-nav-overlay");
 const mainContent = document.querySelector(".main-content");
 const sidebar = document.querySelector(".sidebar");
 
+// add menu-open classes when hamburger is clicked
 hamburgers.forEach((el) => {
   el.addEventListener("click", (evt) => {
     hamburgerIcons.forEach((el) => {
@@ -14,7 +15,7 @@ hamburgers.forEach((el) => {
   });
 });
 
-//
+// remove menu-open classes when overlay is clicked
 mobileOverlay.addEventListener("click", () => {
   hamburgerIcons.forEach((el) => {
     el.classList.remove("menu-open");

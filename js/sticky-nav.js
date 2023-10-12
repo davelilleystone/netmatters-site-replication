@@ -5,16 +5,15 @@ let lastScrollTop = window.scrollY;
 
 window.addEventListener("scroll", () => {
   let st = window.scrollY;
-  // hide header at
+  // hide header when scroll at top
   if (st === 0) {
     header.style.display = "none";
   } else {
     header.style.display = null;
   }
 
-  // Scrolling down so remove sticky nav
+  // scrolling down so hide sticky nav
   if (st > lastScrollTop) {
-    console.log("scrolling down");
     header.classList.remove("show");
   }
   // scrolling up and Y is greater than header height so show sticky nav
