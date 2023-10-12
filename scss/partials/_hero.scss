@@ -8,10 +8,10 @@
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: 1;
   }
 
   &__content {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -20,6 +20,7 @@
     text-align: center;
     padding: 40px 1rem;
     font-weight: $font-weight-semi-bold;
+    z-index: 1;
     @include mq($mq-m) {
       text-align: left;
       align-items: start;
@@ -165,8 +166,8 @@
 
 .full-width-container--hero {
   position: relative;
-  min-height: px-to-rem(550px);
-  max-height: px-to-rem(550px);
+  height: px-to-rem(550px);
+  // max-height: px-to-rem(550px);
   overflow: hidden;
 }
 
