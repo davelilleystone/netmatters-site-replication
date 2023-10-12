@@ -1181,6 +1181,7 @@ body,
 .hero__content-container {
   display: flex;
   align-items: center;
+  justify-content: center;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -1269,6 +1270,61 @@ body,
 .hero--bespoke-software .hero__btn:hover {
   background-color: #566c88;
   border-color: #4e627b;
+}
+.hero--it-support {
+  background: linear-gradient(270deg, transparent 25%, #000), url("../img/hero/it-support.webp") no-repeat center/cover;
+}
+.hero--it-support .hero__btn {
+  background-color: #4183d7;
+  border-color: #4183d7;
+}
+.hero--it-support .hero__btn:hover {
+  background-color: #2a6ec6;
+  border-color: #2665b5;
+}
+.hero--digital-marketing {
+  background: linear-gradient(270deg, transparent 25%, #000), url("../img/hero/digital-marketing.webp") no-repeat center/cover;
+}
+.hero--digital-marketing .hero__btn {
+  background-color: #2ecc71;
+  border-color: #2ecc71;
+}
+.hero--digital-marketing .hero__btn:hover {
+  background-color: #26ab5f;
+  border-color: #239a55;
+}
+.hero--telecoms-services {
+  background: linear-gradient(270deg, transparent 25%, #000), url("../img/hero/telecoms-services.webp") no-repeat center/cover;
+}
+.hero--telecoms-services .hero__btn {
+  background-color: #d64541;
+  border-color: #d64541;
+}
+.hero--telecoms-services .hero__btn:hover {
+  background-color: #c42e2a;
+  border-color: #b32a27;
+}
+.hero--web-design {
+  background: linear-gradient(270deg, transparent 25%, #000), url("../img/hero/web-design.webp") no-repeat center/cover;
+}
+.hero--web-design .hero__btn {
+  background-color: #926fb1;
+  border-color: #926fb1;
+}
+.hero--web-design .hero__btn:hover {
+  background-color: #7e57a0;
+  border-color: #735093;
+}
+.hero--cyber-security {
+  background: linear-gradient(270deg, transparent 25%, #000), url("../img/hero/cyber-security.webp") no-repeat center/cover;
+}
+.hero--cyber-security .hero__btn {
+  background-color: #f62459;
+  border-color: #f62459;
+}
+.hero--cyber-security .hero__btn:hover {
+  background-color: #e80a42;
+  border-color: #d4093c;
 }
 
 .full-width-container--hero {

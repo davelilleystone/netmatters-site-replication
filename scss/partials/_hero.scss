@@ -2,6 +2,7 @@
   &__content-container {
     display: flex;
     align-items: center;
+    justify-content: center;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -92,6 +93,71 @@
       &:hover {
         background-color: #566c88;
         border-color: #4e627b;
+      }
+    }
+  }
+
+  &--it-support {
+    background: linear-gradient(270deg, transparent 25%, #000),
+      url("../img/hero/it-support.webp") no-repeat center / cover;
+    & .hero__btn {
+      background-color: #4183d7;
+      border-color: #4183d7;
+      &:hover {
+        background-color: #2a6ec6;
+        border-color: #2665b5;
+      }
+    }
+  }
+
+  &--digital-marketing {
+    background: linear-gradient(270deg, transparent 25%, #000),
+      url("../img/hero/digital-marketing.webp") no-repeat center / cover;
+    & .hero__btn {
+      background-color: #2ecc71;
+      border-color: #2ecc71;
+      &:hover {
+        background-color: #26ab5f;
+        border-color: #239a55;
+      }
+    }
+  }
+
+  &--telecoms-services {
+    background: linear-gradient(270deg, transparent 25%, #000),
+      url("../img/hero/telecoms-services.webp") no-repeat center / cover;
+    & .hero__btn {
+      background-color: #d64541;
+      border-color: #d64541;
+      &:hover {
+        background-color: #c42e2a;
+        border-color: #b32a27;
+      }
+    }
+  }
+
+  &--web-design {
+    background: linear-gradient(270deg, transparent 25%, #000),
+      url("../img/hero/web-design.webp") no-repeat center / cover;
+    & .hero__btn {
+      background-color: #926fb1;
+      border-color: #926fb1;
+      &:hover {
+        background-color: #7e57a0;
+        border-color: #735093;
+      }
+    }
+  }
+
+  &--cyber-security {
+    background: linear-gradient(270deg, transparent 25%, #000),
+      url("../img/hero/cyber-security.webp") no-repeat center / cover;
+    & .hero__btn {
+      background-color: #f62459;
+      border-color: #f62459;
+      &:hover {
+        background-color: #e80a42;
+        border-color: #d4093c;
       }
     }
   }
