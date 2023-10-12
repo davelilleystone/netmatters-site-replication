@@ -50,7 +50,6 @@ cookieAcceptBtn.forEach((btn) => {
 
 // below is for cookie info page - will come back to this later when I have time
 // cookieInfoBtn.addEventListener("click", showCookieInfoPage);
-
-cookieCancelBtn.addEventListener("click", hideCookieInfoPage);
+// cookieCancelBtn.addEventListener("click", hideCookieInfoPage);
 
 window.addEventListener("DOMContentLoaded", checkCookieConsent);
