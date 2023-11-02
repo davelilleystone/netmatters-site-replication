@@ -15,5 +15,3 @@ $(document).ready(function () {
     slidesToScroll: 1,
   });
 });
-
-console.log("slick");
