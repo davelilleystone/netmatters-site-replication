@@ -4,13 +4,13 @@
 
   &.menu-open {
     transform: translateX(-275px);
-    overflow: hidden;
+    // overflow: hidden;
   }
 
   @include mq($mq-m) {
     &.menu-open {
       transform: translateX(-350px);
-      overflow: hidden;
+      // overflow: hidden;
     }
   }
 }
