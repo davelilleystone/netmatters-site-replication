@@ -2382,18 +2382,18 @@
 
 @media screen and (min-width: 768px) {
   .inner-container {
-    width: 720px;
+    max-width: 720px;
     margin: 0 auto;
   }
 }
 @media screen and (min-width: 992px) {
   .inner-container {
-    width: 970px;
+    max-width: 970px;
   }
 }
 @media screen and (min-width: 1260px) {
   .inner-container {
-    width: 1170px;
+    max-width: 1170px;
   }
 }
 body.overflow-hidden {
