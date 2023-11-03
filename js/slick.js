@@ -1,7 +1,6 @@
 // start slick slider
 // https://kenwheeler.github.io/slick/
 
-// $(document).ready(function () {
 $(".slick-container").slick({
   dots: true,
   arrows: false,
@@ -42,4 +41,3 @@ $(".clients").slick({
   slidesToShow: 1,
   slidesToScroll: 1,
 });
-// });
