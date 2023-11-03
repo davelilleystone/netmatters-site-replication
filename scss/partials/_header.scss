@@ -1,6 +1,6 @@
 .hidden-header {
   position: fixed;
-  // width: 100%;
+  visibility: hidden;
   top: 0;
   left: 0;
   right: 0;
@@ -9,6 +9,7 @@
   transition: all 0.5s;
 
   &.show {
+    visibility: visible;
     transform: translateY(0);
   }
 
