@@ -563,7 +563,7 @@
   overflow-x: clip;
 }
 
-.clients__item, .partners__item {
+.partners__item {
   display: flex;
   align-items: center;
   margin-right: 50px;
@@ -757,6 +757,7 @@
 
 .hidden-header {
   position: fixed;
+  visibility: hidden;
   top: 0;
   left: 0;
   right: 0;
@@ -765,6 +766,7 @@
   transition: all 0.5s;
 }
 .hidden-header.show {
+  visibility: visible;
   transform: translateY(0);
 }
 .hidden-header.menu-open {
@@ -2052,6 +2054,7 @@
 .clients__item {
   position: relative;
   justify-content: center;
+  margin-right: 50px;
   padding: 50px 0px;
 }
 .clients__item:hover .clients__content {
@@ -2060,6 +2063,8 @@
 .clients__content {
   display: none;
   position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   bottom: 100%;
   background-color: #333645;
   color: white;

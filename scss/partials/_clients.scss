@@ -7,9 +7,9 @@
   @extend %slider-container;
 
   &__item {
-    @extend %slider-li;
     position: relative;
     justify-content: center;
+    margin-right: 50px;
     padding: 50px 0px;
     &:hover .clients__content {
       display: block;
@@ -23,6 +23,8 @@
   &__content {
     display: none;
     position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     bottom: 100%;
     background-color: $client-bg;
     color: white;
