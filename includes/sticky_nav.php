@@ -4,7 +4,7 @@
             <div class="inner-container top-nav">
                 <div class="top-nav__container">
                     <div class="top-nav__main">
-                        <a href="#" class="top-nav__logo-container">
+                        <a href="index.php" class="top-nav__logo-container">
                             <picture>
                                 <img class="top-nav__logo" src="./img/logo/nm-logo-front-nav.png" alt="netmatters top navigation logo" />
                             </picture>
@@ -17,7 +17,7 @@
                             </button>
                         </form>
                         <a href="#" class="search__std-btn search__std-btn--support"><span class="search__std-btn-icon icon-mouse im-fs-21"></span>support</a>
-                        <a href="#" class="search__std-btn search__std-btn--contact"><span class="search__std-btn-icon icon-paperplane im-fs-21"></span>contact</a>
+                        <a href="contact.php" class="search__std-btn search__std-btn--contact"><span class="search__std-btn-icon icon-paperplane im-fs-21"></span>contact</a>
                         <button type="submit" class="search__btn search__btn--standalone">
                             <i class="search__icon fa-solid fa-magnifying-glass fa-xl"></i>
                         </button>
