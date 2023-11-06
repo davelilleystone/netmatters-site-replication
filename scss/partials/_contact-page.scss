@@ -1,0 +1,94 @@
+.contact-page-content {
+  background-color: #fff;
+
+  // breadcrumb section
+
+  .breadcrumb-outer {
+    display: none;
+    padding: 14px 0 13px;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+
+    @include mq($mq-s) {
+      display: block;
+    }
+  }
+
+  .breadcrumb-inner a,
+  .out-of-hours a {
+    color: #333645;
+    text-decoration: none;
+  }
+
+  .breadcrumb-inner a:hover,
+  .out-of-hours a:hover {
+    text-decoration: underline;
+  }
+
+  .breadcrumb-inner {
+    font-size: 13px;
+
+    a {
+      font-weight: bold;
+    }
+  }
+
+  // contact form details
+
+  .contact-wrapper-outer {
+    background-color: #fff;
+  }
+
+  .out-of-hours {
+    h4 {
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    a {
+      color: #333645;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    .content-container {
+      display: none;
+    }
+
+    .content-container.show {
+      display: block;
+    }
+  }
+
+  //contact form
+
+  .contact-form {
+    & .privacy-policy {
+      #contact-checkbox {
+        display: none;
+
+        &:checked ~ label {
+          background-color: pink;
+        }
+      }
+
+      label {
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        border: 2px solid black;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+
+    input.contact-form-error,
+    textarea.contact-form-error {
+      border: 1px solid red;
+    }
+  }
+}

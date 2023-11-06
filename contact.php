@@ -1,3 +1,11 @@
+<?php
+
+$method = $_SERVER['REQUEST_METHOD'];
+$formErrors = [];
+$formInputs = [];
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,6 +18,7 @@
     <script src="./js/sticky-nav.js" defer></script>
     <script src="./js/mobile-nav.js" defer></script>
     <script src="./js/cookie-consent.js" defer></script>
+    <script src="./js/contact-dropdown.js" defer></script>
     <title>Full Service Digital Agency | Cambridgeshire & Norfolk | Netmatters</title>
 </head>
 
@@ -28,11 +37,78 @@
         <?php include './includes/sticky_nav.php'; ?>
 
         <div class="mobile-nav-overlay"></div>
-        <div class="main-content">
+        <div class="main-content contact-page-content">
 
             <!-- Standard Nav -->
             <?php include './includes/standard_nav.php'; ?>
 
+
+
+            <div class="breadcrumb-outer">
+                <div class="breadcrumb-inner inner-container">
+                    <span><a href="index.php">Home</a> / Our Offices
+                </div>
+            </div>
+
+
+            <!-- Our Offices -->
+
+            <div class="contact-wrapper-outer">
+                <div class="contact-wrapper-inner inner-container">
+
+                    <!-- Contact Details -->
+                    <div class="contact-details-wrapper">
+                        <div class="contact-details">
+                            <p>Email us on:</p>
+                            <p><a href="#">sales@netmatters.com</a></p>
+                            <p>Business hours:</p>
+                            <p>Monday - Friday 07:00 - 18:00</p>
+                        </div>
+                        <div class="out-of-hours">
+                            <h4><a href="#">Out of Hours IT Support </a></h4>
+                            <div class="content-container">
+                                <div class="content">
+                                    <p>Netmatters IT are offering an Out of Hours service for Emergency and Critical
+                                        tasks.
+                                    </p>
+                                    <p><strong>Monday - Friday 18:00 - 22:00 Saturday 08:00 - 16:00<br>Sunday 10:00 -
+                                            18:00</strong></p>
+                                    <p>To log a critical task, you will need to call our main line number and select
+                                        Option
+                                        2 to
+                                        leave an Out of Hours voicemail. A technician will contact you on the number
+                                        provided
+                                        within 45 minutes of your call. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Contact Form -->
+                    <?php
+                    if ($method === 'GET') {
+
+                        include './includes/contact-form.php';
+                    } elseif ($method === 'POST') {
+
+                        include './includes/contact-form-handler.php';
+
+                        if ($formValid) {
+
+                            include './includes/contact-form-success.php';
+                        } else {
+
+                            include './includes/contact-form.php';
+                        }
+                    }
+                    ?>
+                </div>
+                <!--end contact-wrapper-inner -->
+            </div> <!-- end contact-wrapper-outer -->
+
+
+            <!-- Newsletter -->
+
+            <?php include './includes/newsletter.php' ?>
 
             <!-- Footer -->
             <?php include './includes/footer.php' ?>

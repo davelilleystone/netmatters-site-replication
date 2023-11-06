@@ -2501,4 +2501,72 @@ body.overflow-hidden {
   display: none;
 }
 
+.contact-page-content {
+  background-color: #fff;
+}
+.contact-page-content .breadcrumb-outer {
+  display: none;
+  padding: 14px 0 13px;
+  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.1);
+  margin-bottom: 50px;
+}
+@media screen and (min-width: 768px) {
+  .contact-page-content .breadcrumb-outer {
+    display: block;
+  }
+}
+.contact-page-content .breadcrumb-inner a,
+.contact-page-content .out-of-hours a {
+  color: #333645;
+  text-decoration: none;
+}
+.contact-page-content .breadcrumb-inner a:hover,
+.contact-page-content .out-of-hours a:hover {
+  text-decoration: underline;
+}
+.contact-page-content .breadcrumb-inner {
+  font-size: 13px;
+}
+.contact-page-content .breadcrumb-inner a {
+  font-weight: bold;
+}
+.contact-page-content .contact-wrapper-outer {
+  background-color: #fff;
+}
+.contact-page-content .out-of-hours h4:hover {
+  cursor: pointer;
+}
+.contact-page-content .out-of-hours a {
+  color: #333645;
+  text-decoration: none;
+}
+.contact-page-content .out-of-hours a:hover {
+  text-decoration: underline;
+}
+.contact-page-content .out-of-hours .content-container {
+  display: none;
+}
+.contact-page-content .out-of-hours .content-container.show {
+  display: block;
+}
+.contact-page-content .contact-form .privacy-policy #contact-checkbox {
+  display: none;
+}
+.contact-page-content .contact-form .privacy-policy #contact-checkbox:checked ~ label {
+  background-color: pink;
+}
+.contact-page-content .contact-form .privacy-policy label {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  border: 2px solid black;
+}
+.contact-page-content .contact-form .privacy-policy label:hover {
+  cursor: pointer;
+}
+.contact-page-content .contact-form input.contact-form-error,
+.contact-page-content .contact-form textarea.contact-form-error {
+  border: 1px solid red;
+}
+
 /*# sourceMappingURL=style.css.map */
