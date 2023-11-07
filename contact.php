@@ -1,8 +1,7 @@
 <?php
 
-$method = $_SERVER['REQUEST_METHOD'];
-$formErrors = [];
-$formInputs = [];
+include './includes/contact_form_handler.php';
+
 ?>
 
 
@@ -31,7 +30,8 @@ $formInputs = [];
         <?php include './includes/cookie_consent.php'; ?>
 
         <!-- Sidebar -->
-        <?php include './includes/sidebar.php'; ?>
+        <?php include './includes/sidebar.php';
+        ?>
 
         <!-- Sticky Nav -->
         <?php include './includes/sticky_nav.php'; ?>
@@ -85,21 +85,7 @@ $formInputs = [];
                     </div>
                     <!-- Contact Form -->
                     <?php
-                    if ($method === 'GET') {
-
-                        include './includes/contact-form.php';
-                    } elseif ($method === 'POST') {
-
-                        include './includes/contact-form-handler.php';
-
-                        if ($formValid) {
-
-                            include './includes/contact-form-success.php';
-                        } else {
-
-                            include './includes/contact-form.php';
-                        }
-                    }
+                    include './includes/contact_form.php';
                     ?>
                 </div>
                 <!--end contact-wrapper-inner -->

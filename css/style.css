@@ -2566,7 +2566,7 @@ body.overflow-hidden {
 }
 .contact-page-content .contact-form input.contact-form-error,
 .contact-page-content .contact-form textarea.contact-form-error {
-  border: 1px solid red;
+  border: 2px solid red;
 }
 
 /*# sourceMappingURL=style.css.map */
