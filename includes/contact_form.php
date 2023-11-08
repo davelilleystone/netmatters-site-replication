@@ -1,5 +1,5 @@
 <div class="contact-form-wrapper">
-    <form class="contact-form" action="contact.php" method="post" novalidate>
+    <form class="contact-form" action="<?= $_SERVER['PHP_SELF'] ?>" method="post" novalidate>
         <div class="contact-form-group">
             <label for="name">Your Name</label>
             <input type="text" id="name" name="name" value="<?= $formInputs['name'] ?? '' ?>"
@@ -27,7 +27,7 @@
         </div>
         <div class="privacy-policy">
             <div class="contact-checkbox-wrapper">
-                <input type="checkbox" name="checkbox" id="contact-checkbox" checked>
+                <input type="checkbox" name="checkbox" id="contact-checkbox">
                 <label for="contact-checkbox"></a></label>
             </div>
             <p>Please tick this box if you wish to receive marketing information from us. Please

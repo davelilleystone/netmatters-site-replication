@@ -42,14 +42,11 @@ include './includes/contact_form_handler.php';
             <!-- Standard Nav -->
             <?php include './includes/standard_nav.php'; ?>
 
-
-
             <div class="breadcrumb-outer">
                 <div class="breadcrumb-inner inner-container">
                     <span><a href="index.php">Home</a> / Our Offices
                 </div>
             </div>
-
 
             <!-- Our Offices -->
 
