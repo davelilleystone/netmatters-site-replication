@@ -1,4 +1,4 @@
-<?php include './db_config.php';
+<?php include './includes/db_config.php';
 
 try {
     $conn = new PDO("mysql:host=$host;dbname=$db_name", $user_name, $password);
