@@ -1,9 +1,8 @@
-<div class="contact-form-wrapper">
-    <form class="contact-form" action="<?= $_SERVER['PHP_SELF'] ?>" method="post" novalidate>
+<div class="contact-form-wrapper" id="contact-form">
+    <form class="contact-form" action="contact.php#contact-form" method="post" novalidate>
         <div class="contact-form-group">
             <label for="name">Your Name</label>
-            <input type="text" id="name" name="name" value="<?= $formInputs['name'] ?? '' ?>"
-                class="<?= array_key_exists('name', $formErrors) ? $errorClassName : '' ?>" required>
+            <input type="text" id="name" name="name" value="<?= $formInputs['name'] ?? '' ?>" class="<?= array_key_exists('name', $formErrors) ? $errorClassName : '' ?>" required>
         </div>
         <div class="contact-form-group">
             <label for="company">Your Company</label>
@@ -11,34 +10,33 @@
         </div>
         <div class="contact-form-group">
             <label for="name">Your Email</label>
-            <input type="email" id="email" name="email" value="<?= $formInputs['email'] ?? '' ?>"
-                class="<?= array_key_exists('email', $formErrors) ? $errorClassName : '' ?>" required>
+            <input type="email" id="email" name="email" value="<?= $formInputs['email'] ?? '' ?>" class="<?= array_key_exists('email', $formErrors) ? $errorClassName : '' ?>" required>
         </div>
         <div class="contact-form-group">
             <label for="name">Your Telephone Number</label>
-            <input type="tel" id="telephone" name="telephone" value="<?= $formInputs['telephone'] ?? '' ?>"
-                class="<?= array_key_exists('telephone', $formErrors) ? $errorClassName : '' ?>" required>
+            <input type="tel" id="telephone" name="telephone" value="<?= $formInputs['telephone'] ?? '' ?>" class="<?= array_key_exists('telephone', $formErrors) ? $errorClassName : '' ?>" required>
         </div>
         <div class="contact-form-group">
             <label for="message">message</label>
-            <textarea name="message" id="message" cols="30" rows="10"
-                class="<?= array_key_exists('message', $formErrors) ? $errorClassName : '' ?>"
-                required><?= $formInputs['message'] ?? '' ?></textarea>
+            <textarea name="message" id="message" cols="30" rows="10" class="<?= array_key_exists('message', $formErrors) ? $errorClassName : '' ?>" required><?= $formInputs['message'] ?? '' ?></textarea>
         </div>
-        <div class="privacy-policy">
-            <div class="contact-checkbox-wrapper">
-                <input type="checkbox" name="checkbox" id="contact-checkbox">
-                <label for="contact-checkbox"></a></label>
+        <div class="contact-form__marketing-container">
+            <div class="contact-form__checkbox-container">
+                <input class="contact-form__checkbox--hidden" type="checkbox" name="marketing" id="contact-marketing-checkbox-hidden" />
+                <label class="contact-form__checkbox" id="checkbox-label" for="contact-marketing-checkbox-hidden"></label>
             </div>
-            <p>Please tick this box if you wish to receive marketing information from us. Please
+
+            <label class="contact-form__marketing-text" for="contact-marketing-checkbox-hidden">
+                Please tick this box if you wish to receive marketing information from us. Please
                 see
                 our
-                <a href="#" class="privacy-policy-link">Privacy Policy</a> for more
+                <a href="#" class="contact-form__privacy-link">Privacy Policy</a> for more
                 information on how we
-                keep your data safe.
-            </p>
-
+                keep your data safe.</label>
         </div>
-        <button type="submit" name="submit" class="contact-form-btn">Send Enquiry</button>
+        <button type="submit" name="submit" class="contact-form__btn">Send Enquiry</button>
+
+
+        <?php include './includes/contact_form_errors.php'; ?>
     </form>
 </div>
