@@ -1190,6 +1190,20 @@
   left: 0;
   right: 0;
 }
+.hero__content-wrapper {
+  margin: 0 auto;
+}
+@media screen and (min-width: 992px) {
+  .hero__content-wrapper {
+    width: 960px;
+    padding: 0 2rem;
+  }
+}
+@media screen and (min-width: 1260px) {
+  .hero__content-wrapper {
+    width: 1170px;
+  }
+}
 .hero__content {
   position: relative;
   display: flex;
@@ -2393,7 +2407,7 @@
 }
 @media screen and (min-width: 992px) {
   .inner-container {
-    max-width: 970px;
+    max-width: 960px;
   }
 }
 @media screen and (min-width: 1260px) {

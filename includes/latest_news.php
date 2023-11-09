@@ -23,20 +23,6 @@ function format_date($date, $format = 'jS F Y')
 
 ?>
 
-<!-- <?php foreach ($data as $row) : ?>
-    <p><?= $row['card_theme_colour']; ?>
-    <p><?= $row["card_image"]; ?>
-    <p><?= $row["card_image_alt"]; ?>
-    <p><?= $row["card_tooltip"]; ?>
-    <p><?= $row["card_heading"]; ?>
-    <p><?= $row["card_content"]; ?>
-    <p><?= $row["user_icon"]; ?>
-    <p><?= $row["user_name"]; ?>
-    <p><?= $row["card_read_time"]; ?>
-    <p><?= format_date($row["date_posted"]); ?>
-    <p><?= $row["card_hidden"] ? 'card hidden' : 'card not hidden'; ?>
-    <?php endforeach; ?> -->
-
 <?php foreach ($data as $row) : ?>
     <div class="latest-news__card latest-news__card--<?= $row['card_theme_colour']; ?>-theme <?= $row["card_hidden"] ? 'latest-news__card--hide' : ''; ?>">
         <a class="latest-news__card-overlay" href="#"></a>

@@ -10,6 +10,18 @@
     right: 0;
   }
 
+  &__content-wrapper {
+    margin: 0 auto;
+    @include mq($mq-m) {
+      width: 960px;
+      padding: 0 2rem;
+    }
+
+    @include mq($mq-l) {
+      width: 1170px;
+    }
+  }
+
   &__content {
     position: relative;
     display: flex;
@@ -191,9 +203,6 @@
 
 .slick-dots li.slick-active button:before {
   color: white;
-}
-
-.slick-dots li button {
 }
 
 .slick-dots li button:before {
