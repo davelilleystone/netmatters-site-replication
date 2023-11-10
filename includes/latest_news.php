@@ -3,7 +3,7 @@
 try {
     $conn = new PDO("mysql:host=$host;dbname=$db_name", $user_name, $password);
 } catch (PDOException $ex) {
-    echo "<p>Unable to load Latest News</p>";
+    echo "<p>Unable to load Latest News</p> $ex";
     exit();
 }
 

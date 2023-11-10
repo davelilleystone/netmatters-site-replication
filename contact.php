@@ -4,7 +4,6 @@ include './includes/contact_form_handler.php';
 
 ?>
 
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -195,7 +194,6 @@ include './includes/contact_form_handler.php';
                 </div>
                 <!--end contact-wrapper-inner -->
             </div> <!-- end contact-wrapper-outer -->
-
 
             <!-- Newsletter -->
 
