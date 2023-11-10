@@ -2,8 +2,10 @@
 
 include './includes/sanitize_input.php';
 
+$messageDefault = 'Hi, I am interested in discussing a Our Offices solution, could you please give me a call or send an email?';
 $formErrors = [];
 $formInputs = [];
+$formInputs['message'] = $messageDefault;
 $formValid = true;
 $errorClassName = 'contact-form-error';
 $ukPhoneRegex = '#((\+44\s?\(0\)\s?\d{2,4})|(\+44\s?(01|02|03|07|08)\d{2,3})|(\+44\s?(1|2|3|7|8)\d{2,3})|(\(\+44\)\s?\d{3,4})|(\(\d{5}\))|((01|02|03|07|08)\d{2,3})|(\d{5}))(\s|-|.)(((\d{3,4})(\s|-)(\d{3,4}))|((\d{6,7})))#';

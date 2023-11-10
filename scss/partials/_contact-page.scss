@@ -81,7 +81,7 @@
         display: flex;
         flex-direction: column;
         @include mq($mq-m) {
-          flex: 1 1 40%;
+          flex: 1 1 35%;
         }
       }
 
@@ -158,13 +158,16 @@
 
   .contact-wrapper-outer {
     background-color: #fff;
+    margin: 2rem 0;
   }
 
   .contact-wrapper-inner {
     display: flex;
     flex-direction: column;
+    font-weight: 600;
 
-    @include mq($mq-m) {
+    @include mq($mq-l) {
+      gap: 2rem;
       flex-direction: row-reverse;
     }
   }
@@ -176,41 +179,129 @@
   }
 
   .contact-form-wrapper {
+    background-color: #e6e7e9;
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
     @include mq($mq-m) {
       flex: 2;
+      align-self: flex-start;
     }
   }
 
   // conatct details
 
-  .out-of-hours {
+  .contact-details-wrapper {
+    p,
     h4 {
+      margin: 0 0 2rem;
+      line-height: 1.875rem;
+    }
+
+    .contact-details a {
+      font-size: 1.625rem;
+      color: #926fb1;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    .out-of-hours h4 {
       &:hover {
         cursor: pointer;
         text-decoration: underline;
       }
     }
-
     .content-container {
       display: none;
+      .light-text {
+        color: #666;
+        font-weight: 400;
+      }
     }
 
     .content-container.show {
       display: block;
     }
   }
-
   //contact form
 
   .contact-form {
+    @include mq($mq-m) {
+      flex-direction: row;
+    }
+
+    .button-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 2rem;
+
+      span {
+        font-size: 14px;
+        font-weight: 400;
+      }
+    }
+
     .contact-form-group {
       display: flex;
       flex-direction: column;
+
+      label:not(label[for="company"])::after {
+        content: " *";
+        color: red;
+      }
+    }
+
+    .contact-inputs {
+      display: flex;
+      flex-direction: column;
+
+      @include mq($mq-m) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
+
+      .contact-form-group {
+        flex: 1 1 40%;
+      }
+
+      .contact-form-group input {
+        height: 2rem;
+      }
+
+      .contact-form-group input,
+      .contact-form-group textarea {
+        margin-top: 0.5rem;
+        font-size: 14px;
+        color: #555;
+        border-color: #ccc;
+        background-color: #fff;
+        background-image: none;
+        border: 1px solid #e5e5e5;
+        border-radius: 2px;
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        padding: 5px 15px;
+
+        &:focus {
+          border-color: #5bc0de;
+          outline: 0;
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(91, 192, 222, 0.6);
+        }
+
+        &.contact-form-error {
+          border-color: red;
+        }
+      }
     }
 
     &__marketing-container {
       display: flex;
-      font-weight: 600;
+      margin-top: 1rem;
     }
 
     &__checkbox-container {
@@ -264,11 +355,6 @@
         border-color: $newsletter-btn-hover-border;
         cursor: pointer;
       }
-    }
-
-    input.contact-form-error,
-    textarea.contact-form-error {
-      border: 2px solid red;
     }
   }
 }

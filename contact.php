@@ -148,11 +148,6 @@ include './includes/contact_form_handler.php';
                     </div>
                 </div>
             </div>
-
-
-
-
-
             <div class="contact-wrapper-outer">
                 <div class="contact-wrapper-inner inner-container">
 
@@ -166,18 +161,22 @@ include './includes/contact_form_handler.php';
                         </div>
                         <div class="out-of-hours">
                             <h4>
-                                <Out href="#">Out of Hours IT Support</a>
+                                Out of Hours IT Support <i class="fa-solid fa-chevron-down"></i>
                             </h4>
                             <div class="content-container">
                                 <div class="content">
-                                    <p>Netmatters IT are offering an Out of Hours service for Emergency and
+                                    <p class="light-text">Netmatters IT are offering an Out of Hours service for
+                                        Emergency and
                                         Critical
                                         tasks.
                                     </p>
-                                    <p><strong>Monday - Friday 18:00 - 22:00 Saturday 08:00 - 16:00<br>Sunday
-                                            10:00 -
-                                            18:00</strong></p>
-                                    <p>To log a critical task, you will need to call our main line number and
+                                    <p>
+                                        Monday - Friday 18:00 - 22:00 Saturday 08:00 - 16:00<br>Sunday
+                                        10:00 -
+                                        18:00
+                                    </p>
+                                    <p class="light-text">To log a critical task, you will need to call our main line
+                                        number and
                                         select
                                         Option
                                         2 to
